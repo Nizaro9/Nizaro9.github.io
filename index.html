@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jouw Website</title>
+    <title>Menu</title>
     <style>
-        /* CSS voor de achtergrondkleur van de hele website */
-        body {
-            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        /* CSS voor je menu (als je dat al hebt toegevoegd) */
         ul {
             list-style-type: none;
+            margin: 0;
             padding: 0;
-            background-color: gray;
+            background-color: beige; /* Beige achtergrondkleur */
             overflow: hidden;
-            text-align: center; /* Centreer tekst binnen de <ul> */
         }
-
         li {
-            margin-right: 0; /* Verwijder margin-right */
+            display: inline;
+            margin-right: 20px;
+            font-size: 18px;
         }
-
         a {
             text-decoration: none;
             color: white;
-            font-size: 24px; /* Stel de tekstgrootte in op 24px voor grotere menu-items */
         }
-
-        /* ... andere stijlen voor je menu ... */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: gray;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <!-- Hier komt de inhoud van je website, inclusief je menu -->
     <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/binair-stelsel">Binair stelsel</a></li>
