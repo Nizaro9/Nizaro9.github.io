@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Menu</title>
+    <title>Jouw Website</title>
     <style>
+        /* CSS voor de achtergrondkleur van de hele website */
+        body {
+            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
+        }
+
+        /* CSS voor je menu (als je dat al hebt toegevoegd) */
         ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            background-color: beige; /* Beige achtergrondkleur */
+            background-color: gray;
             overflow: hidden;
+            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
         }
+
         li {
             display: inline;
             margin-right: 20px;
-            font-size: 18px;
         }
+
         a {
             text-decoration: none;
-            color: white;
+            color: white; /* Witte tekstkleur voor menu-items */
+            padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
         }
-        .dropdown {
-            position: relative;
-            display: inline-block;
+
+        a:hover {
+            background-color: gray; /* Grijze achtergrondkleur bij hover */
         }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: gray;
-            min-width: 160px;
-            z-index: 1;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
+
+        /* ... andere stijlen voor je menu ... */
     </style>
 </head>
 <body>
+    <!-- Hier komt de inhoud van je website, inclusief je menu -->
     <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/binair-stelsel">Binair stelsel</a></li>
