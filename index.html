@@ -6,95 +6,63 @@
         /* CSS voor de achtergrondkleur van de hele website */
         body {
             background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
+            margin: 0; /* Verwijder standaardmarges van de pagina */
         }
 
-        /* CSS voor je menu (als je dat al hebt toegevoegd) */
-        ul {
+        /* CSS voor je menu */
+        ul.menu {
             list-style-type: none;
             margin: 0;
             padding: 0;
             background-color: gray;
             overflow: hidden;
             font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
+            position: fixed; /* Zorgt ervoor dat het menu bovenaan blijft, zelfs bij het scrollen */
+            top: 0; /* Plaats het menu bovenaan de pagina */
+            width: 100%; /* Maak het menu 100% breed */
         }
 
-        li {
+        ul.menu li {
             display: inline;
             margin-right: 20px;
         }
 
-        a {
+        ul.menu li a {
             text-decoration: none;
             color: white; /* Witte tekstkleur voor menu-items */
             padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
+            transition: background-color 0.3s; /* Voeg vloeiend mouseover-effect toe */
         }
 
-        a:hover {
-            background-color: gray; /* Grijze achtergrondkleur bij hover */
+        ul.menu li a:hover {
+            background-color: beige; /* Beige achtergrondkleur bij hover */
+            color: gray; /* Verander de tekstkleur bij hover */
         }
 
         /* ... andere stijlen voor je menu ... */
+
+        /* Voeg een container toe voor de rest van de inhoud */
+        .content {
+            margin-top: 60px; /* Zorg ervoor dat de inhoud onder het menu wordt weergegeven */
+            padding: 20px;
+        }
     </style>
 </head>
 <body>
-    <!-- Hier komt de inhoud van je website, inclusief je menu -->
-    <ul>
+    <!-- Het menu bovenaan de website -->
+    <ul class="menu">
         <li><a href="/">Home</a></li>
         <li><a href="/binair-stelsel">Binair stelsel</a></li>
         <li><a href="/kleurmodellen">Kleurmodellen</a></li>
         <li><a href="/cpu">CPU</a></li>
-        <li><a href="/3-lagenmodel">3 Lagenmodel</a></li> <!-- Nieuwe toevoeging -->
-        <li><a href="/contact">Contact</a></li> <!-- Marokko gewijzigd in Contact -->               
+        <li><a href="/3-lagenmodel">3 Lagenmodel</a></li>
+        <li><a href="/contact">Contact</a></li>
     </ul>
+
+    <!-- Hier komt de inhoud van je website -->
+    <div class="content">
+        <!-- Voeg hier de rest van je inhoud toe -->
+    </div>
 </body>
 </html>
 
-/* Basisstijl voor menu-items */
-.menu li {
-    display: inline;
-    margin: 0 10px;
-}
-
-/* Stijl voor menu-items wanneer de muis erover beweegt */
-.menu li a {
-    text-decoration: none;
-    color: #333; /* Neutrale tekstkleur */
-    font-weight: bold;
-    transition: color 0.3s, background-color 0.3s; /* Voeg vloeiende kleurovergangen toe */
-}
-
-.menu li a:hover {
-    color: #333; /* Behoud de neutrale tekstkleur */
-    background-color: beige; /* Beige achtergrondkleur bij mouseover */
-}
-
-/* Container voor het menu, gebruik flexbox om het horizontaal te centreren */
-.menu-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Basisstijl voor menu-items */
-.menu {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu li {
-    margin: 0 10px;
-}
-
-.menu li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-/* Stijl voor menu-items wanneer de muis erover beweegt */
-.menu li a:hover {
-    color: #333;
-    background-color: beige;
-    transition: color 0.3s, background-color 0.3s;
-}
