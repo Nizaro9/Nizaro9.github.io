@@ -9,28 +9,29 @@
             margin: 0; /* Verwijder standaardmarges van de pagina */
         }
 
+        /* CSS voor de container van het menu */
+        .menu-container {
+            text-align: center;
+            background-color: gray;
+            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
+            padding: 10px 0;
+        }
+
         /* CSS voor je menu */
         ul.menu {
             list-style-type: none;
             margin: 0;
             padding: 0;
-            background-color: gray;
-            overflow: hidden;
-            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
-            position: fixed; /* Zorgt ervoor dat het menu bovenaan blijft, zelfs bij het scrollen */
-            top: 0; /* Plaats het menu bovenaan de pagina */
-            width: 100%; /* Maak het menu 100% breed */
         }
 
         ul.menu li {
             display: inline;
-            margin-right: 20px;
+            margin: 0 20px;
         }
 
         ul.menu li a {
             text-decoration: none;
             color: white; /* Witte tekstkleur voor menu-items */
-            padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
             transition: background-color 0.3s; /* Voeg vloeiend mouseover-effect toe */
         }
 
@@ -43,21 +44,22 @@
 
         /* Voeg een container toe voor de rest van de inhoud */
         .content {
-            margin-top: 60px; /* Zorg ervoor dat de inhoud onder het menu wordt weergegeven */
             padding: 20px;
         }
     </style>
 </head>
 <body>
-    <!-- Het menu bovenaan de website -->
-    <ul class="menu">
-        <li><a href="/">Home</a></li>
-        <li><a href="/binair-stelsel">Binair stelsel</a></li>
-        <li><a href="/kleurmodellen">Kleurmodellen</a></li>
-        <li><a href="/cpu">CPU</a></li>
-        <li><a href="/3-lagenmodel">3 Lagenmodel</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
+    <!-- Het menu in het midden bovenaan de website -->
+    <div class="menu-container">
+        <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/binair-stelsel">Binair stelsel</a></li>
+            <li><a href="/kleurmodellen">Kleurmodellen</a></li>
+            <li><a href="/cpu">CPU</a></li>
+            <li><a href="/3-lagenmodel">3 Lagenmodel</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
 
     <!-- Hier komt de inhoud van je website -->
     <div class="content">
@@ -65,4 +67,5 @@
     </div>
 </body>
 </html>
+
 
