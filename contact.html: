@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact - Jouw Website</title>
+    <style>
+        /* CSS-stijlen voor de achtergrondkleur en container (optioneel) */
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Voeg hier andere CSS-stijlen toe voor de Contact-pagina */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact</h1>
+        <p>Neem contact met ons op via onderstaand formulier:</p>
+
+        <!-- Voeg hier je contactformulier of contactinformatie toe -->
+    </div>
+</body>
+</html>
