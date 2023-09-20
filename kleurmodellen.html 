@@ -2,23 +2,78 @@
 <html>
 <head>
     <title>Kleurmodellen - Jouw Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Voeg een extern CSS-bestand toe -->
+    <style>
+        /* CSS voor de achtergrondkleur van de hele website */
+        body {
+            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
+            margin: 0; /* Verwijder standaardmarges van de pagina */
+        }
+
+        /* CSS voor de container van het menu */
+        .menu-container {
+            background-color: gray; /* Grijze balk voor het menu */
+            text-align: center; /* Horizontale uitlijning van het menu */
+            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
+        }
+
+        /* CSS voor het menu zelf */
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul.menu li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        ul.menu li a {
+            text-decoration: none;
+            color: white; /* Witte tekstkleur voor menu-items */
+            padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
+            background-color: gray; /* Grijze achtergrondkleur voor menu-items */
+            transition: background-color 0.3s, color 0.3s; /* Voeg vloeiende hover-effecten toe */
+        }
+
+        ul.menu li a:hover {
+            background-color: beige; /* Beige achtergrondkleur bij hover */
+            color: gray; /* Verander de tekstkleur bij hover */
+        }
+
+        /* ... andere stijlen voor je menu ... */
+
+        /* CSS voor de inhoud van de kleurmodellenpagina */
+        .content {
+            padding: 20px;
+        }
+
+        /* CSS voor de kop van de pagina */
+        h1 {
+            color: gray;
+        }
+    </style>
 </head>
 <body>
-    <!-- Het menu bovenaan de website -->
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="binair-stelsel.html">Binair stelsel</a></li>
-        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-        <li><a href="cpu.html">CPU</a></li>
-        <li><a href="3-lagenmodel.html">3 Lagenmodel</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <!-- Container voor het menu bovenaan de website -->
+    <div class="menu-container">
+        <!-- Het menu zelf -->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="binair-stelsel.html">Binair stelsel</a></li>
+            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="3-lagenmodel.html">3 Lagenmodel</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
-    <!-- Hier komt de inhoud van je pagina voor "Kleurmodellen" -->
+    <!-- Hier komt de inhoud van de kleurmodellenpagina -->
     <div class="content">
         <h1>Kleurmodellen</h1>
-        <!-- Voeg de inhoud voor "Kleurmodellen" toe -->
+        <p>Dit is de pagina over kleurmodellen. Hier kunt u informatie vinden over verschillende kleurmodellen.</p>
+        <!-- Voeg meer inhoud toe zoals gewenst -->
     </div>
 </body>
 </html>
+
