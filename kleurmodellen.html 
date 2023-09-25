@@ -1,79 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Kleurmodellen - Jouw Website</title>
-    <style>
-        /* CSS voor de achtergrondkleur van de hele website */
-        body {
-            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
-            margin: 0; /* Verwijder standaardmarges van de pagina */
-        }
-
-        /* CSS voor de container van het menu */
-        .menu-container {
-            background-color: gray; /* Grijze balk voor het menu */
-            text-align: center; /* Horizontale uitlijning van het menu */
-            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
-        }
-
-        /* CSS voor het menu zelf */
-        ul.menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        ul.menu li {
-            display: inline;
-            margin-right: 20px;
-        }
-
-        ul.menu li a {
-            text-decoration: none;
-            color: white; /* Witte tekstkleur voor menu-items */
-            padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
-            background-color: gray; /* Grijze achtergrondkleur voor menu-items */
-            transition: background-color 0.3s, color 0.3s; /* Voeg vloeiende hover-effecten toe */
-        }
-
-        ul.menu li a:hover {
-            background-color: beige; /* Beige achtergrondkleur bij hover */
-            color: gray; /* Verander de tekstkleur bij hover */
-        }
-
-        /* ... andere stijlen voor je menu ... */
-
-        /* CSS voor de inhoud van de kleurmodellenpagina */
-        .content {
-            padding: 20px;
-        }
-
-        /* CSS voor de kop van de pagina */
-        h1 {
-            color: gray;
-        }
-    </style>
+    <title>Kleuren Modelleren</title>
 </head>
 <body>
-    <!-- Container voor het menu bovenaan de website -->
-    <div class="menu-container">
-        <!-- Het menu zelf -->
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="binair-stelsel.html">Binair stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="cpu.html">CPU</a></li>
-            <li><a href="3-lagenmodel.html">3 Lagenmodel</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </div>
-
-    <!-- Hier komt de inhoud van de kleurmodellenpagina -->
-    <div class="content">
-        <h1>Kleurmodellen</h1>
-        <p>Dit is de pagina over kleurmodellen. Hier kunt u informatie vinden over verschillende kleurmodellen.</p>
-        <!-- Voeg meer inhoud toe zoals gewenst -->
-    </div>
+    <h1>Kleuren Modelleren</h1>
+    
+    <!-- Kleurenkiezer -->
+    <input type="color" id="colorPicker">
+    
+    <!-- Knop om kleur op te slaan -->
+    <button onclick="saveColor()">Kleur Opslaan</button>
+    
+    <!-- Lijst van opgeslagen kleuren -->
+    <ul id="colorList"></ul>
+    
+    <!-- Knop om opgeslagen kleuren weer te geven -->
+    <button onclick="displayColors()">Toon Opgeslagen Kleuren</button>
+    
+    <!-- JavaScript om kleuren op te slaan en weer te geven -->
+    <script>
+        // Array om opgeslagen kleuren bij te houden
+        const savedColors = [];
+        
+        // Referenties naar HTML-elementen
+        const colorPicker = document.getElementById('colorPicker');
+        const colorList = document.getElementById('colorList');
+        
+        // Functie om kleur op te slaan
+        function saveColor() {
+            const selectedColor = colorPicker.value;
+            savedColors.push(selectedColor);
+            colorPicker.value = ''; // Leeg de kleurenkiezer
+        }
+        
+        // Functie om opgeslagen kleuren weer te geven
+        function displayColors() {
+            colorList.innerHTML = ''; // Leeg de lijst
+            for (const color of savedColors) {
+                const listItem = document.createElement('li');
+                listItem.style.backgroundColor = color;
+                listItem.textContent = color;
+                colorList.appendChild(listItem);
+            }
+        }
+    </script>
 </body>
 </html>
-
