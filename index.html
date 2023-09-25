@@ -12,8 +12,8 @@
         /* CSS voor de container van het menu */
         .menu-container {
             background-color: gray; /* Grijze balk voor het menu */
-            text-align: center; /* Horizontale uitlijning van het menu */
             font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe aan de grijze balk */
         }
 
         /* CSS voor het menu zelf */
@@ -21,10 +21,12 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
+            display: flex; /* Maak het menu horizontaal */
+            justify-content: center; /* Centreer de menu-items horizontaal */
+            background-color: gray; /* Grijze achtergrondkleur voor menu-items */
         }
 
         ul.menu li {
-            display: inline;
             margin-right: 20px;
         }
 
@@ -32,7 +34,6 @@
             text-decoration: none;
             color: white; /* Witte tekstkleur voor menu-items */
             padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
-            background-color: gray; /* Grijze achtergrondkleur voor menu-items */
             transition: background-color 0.3s, color 0.3s; /* Voeg vloeiende hover-effecten toe */
         }
 
