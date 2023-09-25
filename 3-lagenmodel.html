@@ -2,23 +2,74 @@
 <html>
 <head>
     <title>3 Lagenmodel - Jouw Website</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Voeg een extern CSS-bestand toe -->
+    <style>
+        /* CSS voor de achtergrondkleur van de hele website */
+        body {
+            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
+            margin: 0; /* Verwijder standaardmarges van de pagina */
+        }
+
+        /* CSS voor de container van het menu */
+        .menu-container {
+            background-color: gray; /* Grijze balk voor het menu */
+            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe aan de grijze balk */
+        }
+
+        /* CSS voor het menu zelf */
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex; /* Maak het menu horizontaal */
+            justify-content: center; /* Centreer de menu-items horizontaal */
+            background-color: gray; /* Grijze achtergrondkleur voor menu-items */
+        }
+
+        ul.menu li {
+            margin-right: 20px;
+        }
+
+        ul.menu li a {
+            text-decoration: none;
+            color: white; /* Witte tekstkleur voor menu-items */
+            padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
+            transition: background-color 0.3s, color 0.3s; /* Voeg vloeiende hover-effecten toe */
+        }
+
+        ul.menu li a:hover {
+            background-color: beige; /* Beige achtergrondkleur bij hover */
+            color: gray; /* Verander de tekstkleur bij hover */
+        }
+
+        /* CSS voor de inhoud van de pagina */
+        .content {
+            padding: 20px; /* Voeg wat ruimte rond de inhoud toe */
+        }
+
+        /* ... andere stijlen voor je pagina ... */
+    </style>
 </head>
 <body>
-    <!-- Het menu bovenaan de website -->
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="binair-stelsel.html">Binair stelsel</a></li>
-        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-        <li><a href="cpu.html">CPU</a></li>
-        <li><a href="3-lagenmodel.html">3 Lagenmodel</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <!-- Container voor het menu bovenaan de website -->
+    <div class="menu-container">
+        <!-- Het menu zelf -->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="binair-stelsel.html">Binair stelsel</a></li>
+            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="3-lagenmodel.html">3 Lagenmodel</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
-    <!-- Hier komt de inhoud van je pagina voor "3 Lagenmodel" -->
+    <!-- Hier komt de inhoud van je "3 Lagenmodel" pagina -->
     <div class="content">
         <h1>3 Lagenmodel</h1>
-        <!-- Voeg de inhoud voor "3 Lagenmodel" toe -->
+        <p>Het 3 Lagenmodel is een concept in de...</p>
+        <!-- Voeg de inhoud van je pagina toe -->
     </div>
 </body>
 </html>
+
