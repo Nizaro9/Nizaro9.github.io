@@ -52,9 +52,16 @@
         /* Stijlen voor de alinea's */
         .content p {
             margin: 0; /* Verwijder standaardmarges van de alinea's */
-            width: 50%; /* Verdeel de beschikbare breedte tussen de alinea's (50% voor elk) */
+            width: 100%; /* Zorg ervoor dat de alinea's de volledige breedte innemen */
             box-sizing: border-box; /* Zorg ervoor dat padding en borders binnen de breedte vallen */
             padding: 10px; /* Voeg wat ruimte binnen elke alinea toe */
+        }
+
+        /* Stijlen voor de afbeelding */
+        .content img {
+            max-width: 100%; /* Zorg ervoor dat de afbeelding niet breder is dan de beschikbare ruimte */
+            height: auto; /* Behoud de oorspronkelijke hoogte-breedteverhouding van de afbeelding */
+            margin: 20px 0; /* Voeg ruimte boven en onder de afbeelding toe */
         }
 
         /* ... andere stijlen voor je pagina ... */
@@ -82,7 +89,7 @@
         <p>In tegenstelling tot ons decimale stelsel, dat tien cijfers heeft (0-9), draait alles in binair om deze twee getallen.</p>
 
         <!-- Voeg hier de nieuwe afbeelding toe met een kleinere grootte -->
-        <img src="https://azurplus.fr/wp-content/uploads/1606737888_Quest-ce-que-le-binaire-et-pourquoi-les-ordinateurs-lutilisent-ils.png" alt="Een illustratie van het binaire stelsel" width="300" height="200">
+        <img src="https://azurplus.fr/wp-content/uploads/1606737888_Quest-ce-que-le-binaire-et-pourquoi-les-ordinateurs-lutilisent-ils.png" alt="Een illustratie van het binaire stelsel" width="800">
 
         <p>Binair Tellen: Van 0 tot 1 en Terug</p>
         <p>Tellen in het binaire stelsel is vergelijkbaar met ons decimale stelsel, maar met enkel nullen en enen.</p>
@@ -108,5 +115,6 @@
     </div>
 </body>
 </html>
+
 
 
