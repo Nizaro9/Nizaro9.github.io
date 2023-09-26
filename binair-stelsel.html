@@ -45,11 +45,16 @@
         /* CSS voor de inhoud van de pagina */
         .content {
             padding: 20px; /* Voeg wat ruimte rond de inhoud toe */
+            display: flex; /* Plaats de alinea's naast elkaar */
+            flex-wrap: wrap; /* Laat de alinea's naar de volgende rij gaan als er niet genoeg ruimte is */
         }
 
-        /* Extra CSS voor meer ruimte tussen alinea's */
+        /* Stijlen voor de alinea's */
         .content p {
-            margin-bottom: 20px; /* Voeg 20px marges toe aan de onderkant van paragrafen */
+            margin: 0; /* Verwijder standaardmarges van de alinea's */
+            width: 50%; /* Verdeel de beschikbare breedte tussen de alinea's (50% voor elk) */
+            box-sizing: border-box; /* Zorg ervoor dat padding en borders binnen de breedte vallen */
+            padding: 10px; /* Voeg wat ruimte binnen elke alinea toe */
         }
 
         /* ... andere stijlen voor je pagina ... */
@@ -72,22 +77,35 @@
     <!-- Hier komt de inhoud van je "Binair Stelsel" pagina -->
     <div class="content">
         <h1>Binair Stelsel</h1>
-        <p>Het binair stelsel is een wiskundig systeem dat slechts twee cijfers gebruikt: 0 en 1. In tegenstelling tot ons decimale stelsel, dat tien cijfers heeft (0-9), draait alles in binair om deze twee getallen.</p>
+        <p>Het binair stelsel is een wiskundig systeem dat slechts twee cijfers gebruikt: 0 en 1.</p>
+        
+        <p>In tegenstelling tot ons decimale stelsel, dat tien cijfers heeft (0-9), draait alles in binair om deze twee getallen.</p>
 
         <!-- Voeg hier de nieuwe afbeelding toe met behulp van de link -->
-        <img src="https://nl.123rf.com/photo_136102109_creatieve-blauwe-binaire-code-achtergrond-programmeren-en-coderen-concept-3d-rendering.html" alt="Een illustratie van het binaire stelsel">
+        <img src="https://azurplus.fr/wp-content/uploads/1606737888_Quest-ce-que-le-binaire-et-pourquoi-les-ordinateurs-lutilisent-ils.png" alt="Een illustratie van het binaire stelsel">
 
-        <h2>Binair Tellen: Van 0 tot 1 en Terug</h2>
-        <p>Tellen in het binaire stelsel is vergelijkbaar met ons decimale stelsel, maar met enkel nullen en enen. We beginnen met 0, gaan dan naar 1, en als we de hoogste waarde bereiken, begint het opnieuw bij 0. Zo ontstaat een reeks zoals 0, 1, 10, 11, 100, enzovoort.</p>
+        <p>Binair Tellen: Van 0 tot 1 en Terug</p>
+        <p>Tellen in het binaire stelsel is vergelijkbaar met ons decimale stelsel, maar met enkel nullen en enen.</p>
+        
+        <p>We beginnen met 0, gaan dan naar 1, en als we de hoogste waarde bereiken, begint het opnieuw bij 0. Zo ontstaat een reeks zoals 0, 1, 10, 11, 100, enzovoort.</p>
 
-        <h2>Toepassingen in de Informatica: De Digitale Wereld</h2>
-        <p>Het binair stelsel is de basis van alle digitale systemen, inclusief computers en digitale technologieën. In computers worden gegevens en instructies omgezet in binaire cijfers voordat ze worden verwerkt. Dit maakt het mogelijk voor computers om snel en efficiënt te werken.</p>
+        <p>Toepassingen in de Informatica: De Digitale Wereld</p>
+        <p>Het binair stelsel is de basis van alle digitale systemen, inclusief computers en digitale technologieën.</p>
+        
+        <p>In computers worden gegevens en instructies omgezet in binaire cijfers voordat ze worden verwerkt. Dit maakt het mogelijk voor computers om snel en efficiënt te werken.</p>
 
-        <h2>Bits en Bytes: Het Meten van Informatie</h2>
-        <p>In de computerwereld meten we informatie in bits en bytes. Een bit kan slechts twee waarden hebben: 0 of 1. Een byte bestaat uit acht bits. Dit is de eenheid waarmee gegevens worden opgeslagen, verzonden en verwerkt in computers.</p>
+        <p>Bits en Bytes: Het Meten van Informatie</p>
+        <p>In de computerwereld meten we informatie in bits en bytes.</p>
+        
+        <p>Een bit kan slechts twee waarden hebben: 0 of 1. Een byte bestaat uit acht bits.</p>
+        
+        <p>Dit is de eenheid waarmee gegevens worden opgeslagen, verzonden en verwerkt in computers.</p>
 
-        <h2>Conclusie: Het Belang van Het Binaire Stelsel</h2>
-        <p>Het binair stelsel vormt de kern van de digitale revolutie en heeft de moderne wereld zoals we die kennen mogelijk gemaakt. Het begrijpen van het binaire stelsel helpt ons de werking van computers en digitale technologieën beter te waarderen. Het blijft een krachtig concept dat onze wereld blijft veranderen en evolueren met nieuwe technologieën.</p>
+        <p>Conclusie: Het Belang van Het Binaire Stelsel</p>
+        <p>Het binair stelsel vormt de kern van de digitale revolutie en heeft de moderne wereld zoals we die kennen mogelijk gemaakt.</p>
+        
+        <p>Het begrijpen van het binaire stelsel helpt ons de werking van computers en digitale technologieën beter te waarderen. Het blijft een krachtig concept dat onze wereld blijft veranderen en evolueren met nieuwe technologieën.</p>
     </div>
 </body>
 </html>
+
