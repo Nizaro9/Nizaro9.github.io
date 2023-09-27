@@ -48,7 +48,52 @@
             padding: 20px; /* Voeg wat ruimte rond de inhoud toe */
         }
 
-        /* ... andere stijlen voor je pagina ... */
+        /* CSS voor de footer */
+        .footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* CSS voor de footer-content */
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        /* CSS voor de footer-secties */
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+        }
+
+        /* CSS voor de footer-links */
+        .footer-section h2 {
+            font-size: 1.2em;
+        }
+
+        .footer-section p {
+            margin: 5px 0;
+        }
+
+        /* CSS voor de footer-social sectie */
+        .footer-section.social {
+            text-align: center;
+        }
+
+        .footer-section.social a {
+            margin: 0 10px;
+        }
+
+        /* CSS voor de footer-bottom */
+        .footer-bottom {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
     </style>
 </head>
 <body>
@@ -65,14 +110,40 @@
         </ul>
     </div>
 
-    <!-- Hier komt de inhoud van je homepagina -->
+    <!-- Hier komt de inhoud van je homepage -->
     <div class="content">
-        <h1>Welkom op Nizar's Website!</h1>
-        <p>Ik ben Nizar, en ik ben gepassioneerd over informatica.</p>
-        <p>Ik zit momenteel op het Vlietland College in Leiden en volg het havo-onderwijs.</p>
-        <p>De wereld van informatica heeft mijn aandacht getrokken vanwege mijn interesse in technologie, gaming en het internet.</p>
-        <p>Op deze website deel ik mijn kennis en ervaringen over verschillende informatica-gerelateerde onderwerpen.</p>
-        <p>Samen kunnen we de fascinerende wereld van informatica verkennen. Laten we beginnen!</p>
+        <h1>Welkom op Nizar's Website</h1>
+        <p>Mijn naam is Nizar Boukhari, en ik heet je van harte welkom op mijn website!</p>
+        <p>Ik zit momenteel in havo 4 op het Vlietland College in Leiden. Vorig jaar behaalde ik mijn mavo-diploma en stroomde ik door naar de havo.</p>
+        <p>Deze website is ontstaan als onderdeel van een schoolopdracht voor het vak Informatica. Het was mijn eerste echte ervaring met coderen in talen zoals HTML en CSS. Deze uitdaging was leerzaam en bracht me nieuwe vaardigheden bij.</p>
+        <p>Als je zelf iets nieuws wilt leren, bekijk dan mijn website, waar ik uitleg geef over verschillende informatica-gerelateerde onderwerpen.</p>
+        <p>Welkom op mijn website, en laten we samen de wereld van informatica verkennen!</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Over Mijn Website</h2>
+                <p>Dit is mijn persoonlijke website waar ik informatie deel over verschillende informatica-gerelateerde onderwerpen. Ik ben enthousiast om mijn kennis met jullie te delen.</p>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contactgegevens</h2>
+                <p>Adres: Apollolaan 262</p>
+                <p>Telefoon: +31 123 456 789</p>
+                <p>Email: Nizar.boukhari@vlietlandcollege.nl</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Volg Mij</h2>
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2023 Nizar Boukhari | Alle rechten voorbehouden
+        </div>
     </div>
 </body>
 </html>
+
