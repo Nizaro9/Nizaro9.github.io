@@ -48,11 +48,17 @@
             padding: 20px; /* Voeg wat ruimte rond de inhoud toe */
         }
 
-        /* Stijlen voor de informatie over CPU's */
+        /* Stijlen voor de informatie over de CPU */
         .cpu-info {
             width: 70%; /* Geef de informatie 70% van de beschikbare breedte */
             padding: 20px; /* Voeg wat ruimte binnen de informatie toe */
             box-sizing: border-box; /* Zorg ervoor dat padding en borders binnen de breedte vallen */
+        }
+
+        /* Stijl voor de video */
+        .cpu-video {
+            float: left; /* Zet de video aan de linkerkant van de tekst */
+            margin-right: 20px; /* Voeg wat ruimte rechts van de video toe */
         }
 
         /* ... andere stijlen voor je pagina ... */
@@ -76,12 +82,18 @@
     <div class="content">
         <div class="cpu-info">
             <h1>CPU (Central Processing Unit)</h1>
-            <p>De CPU, of Central Processing Unit, is het brein van een computer. Het is verantwoordelijk voor het uitvoeren van berekeningen en het aansturen van alle hardwarecomponenten.</p>
-            <p>CPUs zijn er in verschillende snelheden en architecturen, en ze spelen een cruciale rol in de prestaties van een computer. Snellere CPU's kunnen taken sneller verwerken.</p>
-            <p>Met de evolutie van technologie worden CPUs steeds krachtiger en efficiënter, waardoor complexe taken en applicaties kunnen worden uitgevoerd.</p>
-            <p>Een goede CPU is van groot belang voor een soepele computerervaring, vooral voor taken zoals gaming en videobewerking.</p>
+            <p>De CPU, of Central Processing Unit, is het brein van een computer. Het is verantwoordelijk voor het uitvoeren van berekeningen en het beheren van alle taken die een computer kan uitvoeren.</p>
+            <p>De CPU bestaat uit verschillende componenten, waaronder de controle-eenheid, de rekenkundige/logische eenheid en registers. Deze componenten werken samen om instructies te decoderen en uit te voeren.</p>
+            <p>De snelheid van een CPU wordt gemeten in gigahertz (GHz) en bepaalt hoe snel een computer taken kan voltooien. Moderne CPU's zijn extreem krachtig en kunnen complexe taken in een fractie van een seconde verwerken.</p>
+            <p>De CPU is een essentieel onderdeel van elke computer en beïnvloedt de algehele prestaties ervan. Het begrijpen van de werking van de CPU is cruciaal voor iedereen die met computers werkt of erin geïnteresseerd is.</p>
+        </div>
+
+        <!-- Voeg de video toe aan de CPU pagina -->
+        <div class="cpu-video">
+            <iframe width="704" height="396" src="https://www.youtube.com/embed/Fo-vSqYMLvQ" title="Central processing Unit | What is CPU | How CPU works | Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
 </body>
 </html>
+
 
