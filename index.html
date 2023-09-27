@@ -5,16 +5,15 @@
     <style>
         /* CSS voor de achtergrondkleur van de hele website */
         body {
-            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
-            margin: 0; /* Verwijder standaardmarges van de pagina */
-            font-family: Arial, sans-serif; /* Kies een standaard lettertype */
+            background-color: beige;
+            margin: 0;
         }
 
         /* CSS voor de container van het menu */
         .menu-container {
-            background-color: gray; /* Grijze balk voor het menu */
-            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe aan de grijze balk */
+            background-color: gray;
+            font-family: 'Comic Neue', cursive;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
         }
 
         /* CSS voor het menu zelf */
@@ -22,9 +21,9 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            display: flex; /* Maak het menu horizontaal */
-            justify-content: center; /* Centreer de menu-items horizontaal */
-            background-color: gray; /* Grijze achtergrondkleur voor menu-items */
+            display: flex;
+            justify-content: center;
+            background-color: gray;
         }
 
         ul.menu li {
@@ -33,66 +32,49 @@
 
         ul.menu li a {
             text-decoration: none;
-            color: white; /* Witte tekstkleur voor menu-items */
-            padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
-            transition: background-color 0.3s, color 0.3s; /* Voeg vloeiende hover-effecten toe */
+            color: white;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         ul.menu li a:hover {
-            background-color: beige; /* Beige achtergrondkleur bij hover */
-            color: gray; /* Verander de tekstkleur bij hover */
+            background-color: beige;
+            color: gray;
         }
 
         /* CSS voor de inhoud van de pagina */
         .content {
-            padding: 20px; /* Voeg wat ruimte rond de inhoud toe */
+            padding: 20px;
         }
 
-        /* CSS voor de footer */
+        /* Extra CSS voor meer ruimte tussen alinea's */
+        .content p {
+            margin-bottom: 20px;
+        }
+
+        /* CSS voor de social media iconen */
+        .social-icons {
+            margin-right: 20px;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        /* Footer */
         .footer {
+            margin-top: 20px;
             background-color: gray;
             color: white;
             text-align: center;
-            padding: 20px 0;
-        }
-
-        /* CSS voor de footer-content */
-        .footer-content {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-
-        /* CSS voor de footer-secties */
-        .footer-section {
-            flex: 1;
-            margin: 10px;
-        }
-
-        /* CSS voor de footer-links */
-        .footer-section h2 {
-            font-size: 1.2em;
-        }
-
-        .footer-section p {
-            margin: 5px 0;
-        }
-
-        /* CSS voor de footer-social sectie */
-        .footer-section.social {
-            text-align: center;
-        }
-
-        .footer-section.social a {
-            margin: 0 10px;
-        }
-
-        /* CSS voor de footer-bottom */
-        .footer-bottom {
-            background-color: gray;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
+            padding: 10px;
         }
     </style>
 </head>
@@ -120,30 +102,21 @@
         <p>Welkom op mijn website, en laten we samen de wereld van informatica verkennen!</p>
     </div>
 
+    <!-- Social media iconen -->
+    <div class="social-icons">
+        <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
+            <img src="instagram-logo.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
+            <img src="facebook-logo.png" alt="Facebook">
+        </a>
+    </div>
+
     <!-- Footer -->
     <div class="footer">
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h2>Over Mijn Website</h2>
-                <p>Dit is mijn persoonlijke website waar ik informatie deel over verschillende informatica-gerelateerde onderwerpen. Ik ben enthousiast om mijn kennis met jullie te delen.</p>
-            </div>
-            <div class="footer-section contact">
-                <h2>Contactgegevens</h2>
-                <p>Adres: Apollolaan 262</p>
-                <p>Telefoon: +31 123 456 789</p>
-                <p>Email: Nizar.boukhari@vlietlandcollege.nl</p>
-            </div>
-            <div class="footer-section social">
-                <h2>Volg Mij</h2>
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            &copy; 2023 Nizar Boukhari | Alle rechten voorbehouden
-        </div>
+        &copy; 2023 Nizar Boukhari - Alle rechten voorbehouden
     </div>
 </body>
 </html>
+
 
