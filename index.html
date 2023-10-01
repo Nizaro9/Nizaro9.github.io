@@ -61,14 +61,19 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            align-items: flex-end;
+            align-items: center; /* Plaats de afbeeldingen in het midden van de rechterkant */
         }
 
-        .images img {
-            margin-bottom: 10px;
+        .images img:first-child {
             max-width: 100%;
             height: auto;
-            width: 300px; /* Pas de breedte aan zoals gewenst */
+            width: 400px; /* Maak de eerste afbeelding breder */
+        }
+
+        .images img:last-child {
+            max-width: 100%;
+            height: auto;
+            width: 300px; /* Pas de breedte van de tweede afbeelding aan zoals gewenst */
         }
 
         /* Extra CSS voor meer ruimte tussen alinea's */
@@ -76,10 +81,11 @@
             margin-bottom: 20px;
         }
 
-        /* CSS voor de social media iconen */
+        /* CSS voor de social media iconen en footer */
         .footer {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
+            align-items: center;
             margin-top: 20px;
             background-color: gray;
             color: white;
@@ -124,13 +130,15 @@
 
     <!-- Footer -->
     <div class="footer">
-        <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
-            <img src="instagram-logo.png" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
-            <img src="facebook-logo.png" alt="Facebook">
-        </a>
-        &copy; 2023 Nizar Boukhari - Alle rechten voorbehouden
+        <span>Made by Nizar Boukhari</span>
+        <div>
+            <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
+                <img src="instagram-logo.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
+                <img src="facebook-logo.png" alt="Facebook">
+            </a>
+        </div>
     </div>
 </body>
 </html>
