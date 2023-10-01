@@ -45,42 +45,26 @@
 
         /* CSS voor de inhoud van de pagina */
         .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 20px;
+            padding: 20px; /* Voeg wat ruimte rond de inhoud toe */
         }
 
-        /* CSS voor de tekstinhoud */
-        .text {
-            flex: 1;
-            padding-right: 20px;
+        /* Stijlen voor de alinea's */
+        .content p {
+            margin: 10px 0; /* Voeg 10px marges boven en onder de alinea's toe */
+            font-size: 18px; /* Grootte van de tekst */
         }
 
-        /* CSS voor de afbeeldingen */
-        .images {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
+        /* Stijlen voor de ingedrukte kopjes */
+        .content h2 {
+            font-weight: bold; /* Maak de tussenkopjes vetgedrukt */
+            margin-top: 20px; /* Ruimte boven de tussenkopjes */
         }
 
-        .images img {
-            margin-bottom: 10px;
-            max-width: 100%;
-            height: auto;
-            width: 300px; /* Pas de breedte aan zoals gewenst */
-        }
-
-        /* Extra CSS voor meer ruimte tussen alinea's */
-        .text p {
-            margin-bottom: 20px;
-        }
-
-        /* CSS voor de tekstinhoud van het Binair Stelsel */
-        .text-binair {
-            font-size: 16px; /* Aangepaste tekstgrootte */
-            line-height: 1.4; /* Aangepaste regelhoogte voor betere leesbaarheid */
+        /* Stijlen voor de afbeelding */
+        .content img {
+            max-width: 100%; /* Zorg ervoor dat de afbeelding niet breder is dan de beschikbare ruimte */
+            height: auto; /* Behoud de oorspronkelijke hoogte-breedteverhouding van de afbeelding */
+            margin: 20px 0; /* Voeg ruimte boven en onder de afbeelding toe */
         }
     </style>
 </head>
@@ -101,27 +85,23 @@
 
     <!-- Hier komt de inhoud van je "Binair Stelsel" pagina -->
     <div class="content">
-        <div class="text text-binair">
-            <h1>Binair Stelsel</h1>
-            <p>Het binair stelsel, ook wel bekend als het tweetallige stelsel, is de basis van de taal die computers begrijpen en gebruiken om informatie op te slaan en te verwerken. In tegenstelling tot het decimale stelsel dat we dagelijks gebruiken, waarin getallen worden weergegeven met cijfers van 0 tot 9, bestaat het binair stelsel uit slechts twee cijfers: 0 en 1. Dit eenvoudige systeem vormt de kern van alle digitale computers en vormt de basis voor alle digitale informatie.</p>
-            
-            <p>Bits en Bytes: De Bouwstenen van Data</p>
-            
-            <p>In het binair stelsel wordt elke eenheid van informatie een "bit" genoemd. Een bit kan slechts twee waarden hebben: 0 of 1, wat overeenkomt met "uit" en "aan" in elektronische termen. Bits worden gecombineerd om complexere informatie weer te geven. Acht bits vormen samen een "byte", wat de basis eenheid is voor het opslaan van gegevens in computers. Een byte kan 256 verschillende waarden aannemen (2^8).</p>
-            
-            <p>ASCII-tabel: Tekens in Binair Formaat</p>
-            
-            <p>Om tekst en tekens in computers weer te geven, wordt vaak de ASCII-tabel gebruikt. ASCII staat voor "American Standard Code for Information Interchange" en is een standaard voor het toewijzen van numerieke waarden aan tekens, zoals letters, cijfers, leestekens en speciale symbolen. Elke letter en symbool in de tabel heeft een unieke binair gecodeerde waarde die wordt gebruikt om tekst te vertegenwoordigen en op te slaan in computers.</p>
-            
-            <p>Toepassingen van het Binair Stelsel</p>
-            
-            <p>Het binair stelsel is essentieel voor alle aspecten van computerwetenschappen en informatietechnologie. Het maakt de opslag, verwerking en overdracht van gegevens mogelijk, of het nu gaat om tekst, afbeeldingen, geluiden of video's. Het begrijpen van het binair stelsel is de sleutel tot het begrijpen van de werking van computers en is een basisvaardigheid voor elke programmeur of IT-professional.</p>
-            
-            <p>In de wereld van computers en technologie is het binair stelsel de taal waarin machines communiceren en functioneren. Het is de basis van alles wat we doen met digitale apparaten en vormt de ruggengraat van de moderne informatietechnologie.</p>
-        </div>
-        <div class="images">
-            <!-- Voeg hier de nieuwe afbeelding toe met een kleinere breedte -->
-            <img src="https://azurplus.fr/wp-content/uploads/1606737888_Quest-ce-que-le-binaire-et-pourquoi-les-ordinateurs-lutilisent-ils.png" alt="Een illustratie van het binaire stelsel">
-        </div>
+        <h2>Binair Stelsel</h2>
+        <p>Het binair stelsel, ook wel bekend als het tweetallige stelsel, is de basis van de taal die computers begrijpen en gebruiken om informatie op te slaan en te verwerken. In tegenstelling tot het decimale stelsel dat we dagelijks gebruiken, waarin getallen worden weergegeven met cijfers van 0 tot 9, bestaat het binair stelsel uit slechts twee cijfers: 0 en 1. Dit eenvoudige systeem vormt de kern van alle digitale computers en vormt de basis voor alle digitale informatie.</p>
+        
+        <h2>Bits en Bytes: De Bouwstenen van Data</h2>
+        
+        <p>In het binair stelsel wordt elke eenheid van informatie een "bit" genoemd. Een bit kan slechts twee waarden hebben: 0 of 1, wat overeenkomt met "uit" en "aan" in elektronische termen. Bits worden gecombineerd om complexere informatie weer te geven. Acht bits vormen samen een "byte", wat de basis eenheid is voor het opslaan van gegevens in computers. Een byte kan 256 verschillende waarden aannemen (2^8).</p>
+        
+        <h2>ASCII-tabel: Tekens in Binair Formaat</h2>
+        
+        <p>Om tekst en tekens in computers weer te geven, wordt vaak de ASCII-tabel gebruikt. ASCII staat voor "American Standard Code for Information Interchange" en is een standaard voor het toewijzen van numerieke waarden aan tekens, zoals letters, cijfers, leestekens en speciale symbolen. Elke letter en symbool in de tabel heeft een unieke binair gecodeerde waarde die wordt gebruikt om tekst te vertegenwoordigen en op te slaan in computers.</p>
+        
+        <h2>Toepassingen van het Binair Stelsel</h2>
+        
+        <p>Het binair stelsel is essentieel voor alle aspecten van computerwetenschappen en informatietechnologie. Het maakt de opslag, verwerking en overdracht van gegevens mogelijk, of het nu gaat om tekst, afbeeldingen, geluiden of video's. Het begrijpen van het binair stelsel is de sleutel tot het begrijpen van de werking van computers en is een basisvaardigheid voor elke programmeur of IT-professional.</p>
+
+        <!-- Afbeelding onderaan de inhoud -->
+        <img src="https://azurplus.fr/wp-content/uploads/1606737888_Quest-ce-que-le-binaire-et-pourquoi-les-ordinateurs-lutilisent-ils.png" alt="Een illustratie van het binaire stelsel">
     </div>
-    
+</body>
+</html>
