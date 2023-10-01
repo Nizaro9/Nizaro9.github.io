@@ -10,9 +10,9 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Het centrum van de pagina uitlijnen */
-            justify-content: center; /* Verticaal centreren */
-            min-height: 100vh; /* Volledige viewporthoogte innemen */
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         /* CSS voor de container van het menu */
@@ -50,16 +50,16 @@
 
         /* CSS voor de inhoud van de pagina */
         .content {
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end; /* Inhoud aan de rechterkant uitlijnen */
+            display: flex; /* Laat de inhoud in een rij staan */
+            justify-content: space-between; /* Plaats de inhoud aan de uiteinden van de rij */
+            align-items: flex-start; /* Plaats de inhoud aan de bovenkant van de rij */
+            max-width: 800px;
+            margin-top: 20px; /* Voeg ruimte boven de inhoud toe */
         }
 
-        /* Stijlen voor de contactgegevens aan de rechterkant */
+        /* Stijlen voor de contactgegevens */
         .contact {
-            width: 40%;
-            float: right;
+            width: 40%; /* Geef de contactgegevens een breedte van 40% */
             padding: 20px;
             box-sizing: border-box;
         }
@@ -69,11 +69,11 @@
             margin-bottom: 10px;
         }
 
-        /* Stijlen voor het contactformulier aan de rechterkant */
+        /* Stijlen voor het contactformulier */
         form {
-            width: 40%;
-            float: right;
-            margin-top: 20px;
+            width: 50%; /* Geef het contactformulier een breedte van 50% */
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         form label,
@@ -124,7 +124,6 @@
             <p>Email: <a href="mailto:Nizar.boukhari@vlietlandcollege.nl">Nizar.boukhari@vlietlandcollege.nl</a></p>
         </div>
 
-        <h2>Contactformulier</h2>
         <form id="contact-form">
             <label for="name">Naam:</label>
             <input type="text" id="name" name="name" required><br>
