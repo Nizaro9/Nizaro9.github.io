@@ -46,6 +46,9 @@
         /* CSS voor de inhoud van de pagina */
         .content {
             padding: 20px;
+            display: flex;
+            justify-content: space-between; /* Plaatst de tekst aan de linkerkant en laat de rechterkant leeg */
+            align-items: flex-start; /* Verticaal uitlijnen naar de bovenkant */
         }
 
         /* Stijlen voor de alinea's */
@@ -55,19 +58,9 @@
             text-align: left; /* Tekst aan de linkerkant uitlijnen */
         }
 
-        /* Stijlen voor de tussenkopjes */
-        .content h2 {
-            color: black;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
         /* Stijlen voor de afbeelding */
         .content img {
-            width: 60%; /* De afbeelding is nu groter */
-            float: left;
-            margin-right: 20px;
-            margin-bottom: 20px; /* Ruimte onder de afbeelding toegevoegd */
+            width: 50%; /* Pas de grootte van de afbeelding aan zodat deze bij de tekst past */
         }
     </style>
 </head>
@@ -88,14 +81,19 @@
 
     <!-- Hier komt de inhoud van je "Algemene Informatie" pagina -->
     <div class="content">
-        <h1>Algemene Informatie</h1>
-        <p>Welkom op mijn website! Hier vind je een schat aan informatie over verschillende informatica-gerelateerde onderwerpen. Deze website is bedoeld om je te voorzien van duidelijke en begrijpelijke uitleg over technologische concepten.</p>
-        
-        <p>We behandelen onderwerpen variërend van het binair stelsel tot kleurmodellen, compressie, bestandsformaten en meer. Of je nu een beginner bent of al enige ervaring hebt, er is voor iedereen wel iets om te ontdekken en te leren.</p>
-        
-        <p>Onze missie is om complexe technologieën eenvoudig uit te leggen, zodat iedereen ze kan begrijpen. Door middel van artikelen, tutorials en heldere uitleg willen we je helpen om beter inzicht te krijgen in de wereld van informatica.</p>
-        
-        <img src="https://www.segbroek.nl/Portals/0/Afbeeldingen/Secties/informatica-crop.jpg" alt="Programmeren en Informatica"/>
+        <div>
+            <h1>Algemene Informatie</h1>
+            <p>Welkom op mijn website! Hier vind je een schat aan informatie over verschillende informatica-gerelateerde onderwerpen. Deze website is bedoeld om je te voorzien van duidelijke en begrijpelijke uitleg over technologische concepten.</p>
+            
+            <p>We behandelen onderwerpen variërend van het binair stelsel tot kleurmodellen, compressie, bestandsformaten en meer. Of je nu een beginner bent of al enige ervaring hebt, er is voor iedereen wel iets om te ontdekken en te leren.</p>
+            
+            <p>Onze missie is om complexe technologieën eenvoudig uit te leggen, zodat iedereen ze kan begrijpen. Door middel van artikelen, tutorials en heldere uitleg willen we je helpen om beter inzicht te krijgen in de wereld van informatica.</p>
+            
+            <p>Heb je vragen, suggesties of wil je gewoon meer weten? Neem gerust contact met ons op via het <a href="contact.html">contactformulier</a>. We staan altijd klaar om je te helpen.</p>
+        </div>
+        <div>
+            <img src="https://www.segbroek.nl/Portals/0/Afbeeldingen/Secties/informatica-crop.jpg" alt="Programmeren en Informatica"/>
+        </div>
     </div>
 </body>
 </html>
