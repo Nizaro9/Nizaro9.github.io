@@ -8,6 +8,11 @@
             background-color: beige;
             margin: 0;
             font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Het centrum van de pagina uitlijnen */
+            justify-content: center; /* Verticaal centreren */
+            min-height: 100vh; /* Volledige viewporthoogte innemen */
         }
 
         /* CSS voor de container van het menu */
@@ -50,8 +55,7 @@
 
         /* Stijlen voor de contactgegevens */
         .contact {
-            float: left;
-            width: 40%;
+            width: 60%;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -63,7 +67,7 @@
 
         /* Stijlen voor het contactformulier */
         form {
-            width: 60%;
+            margin-top: 20px; /* Ruimte boven het formulier toevoegen */
         }
 
         form label,
