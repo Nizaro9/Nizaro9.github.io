@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Binair Stelsel</title>
+    <title>Binair Stelsel - Jouw Website</title>
     <style>
-        /* CSS voor de achtergrondkleur van de hele pagina */
+        /* CSS voor de achtergrondkleur van de hele website */
         body {
-            background-color: beige;
-            margin: 0;
-            padding: 0;
+            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
+            margin: 0; /* Verwijder standaardmarges van de pagina */
+            font-family: Arial, sans-serif; /* Kies een standaard lettertype */
         }
 
         /* CSS voor de container van het menu */
         .menu-container {
-            background-color: gray;
-            font-family: 'Comic Neue', cursive;
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+            background-color: gray; /* Grijze balk voor het menu */
+            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe aan de grijze balk */
         }
 
         /* CSS voor het menu zelf */
@@ -22,9 +22,9 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color: gray;
+            display: flex; /* Maak het menu horizontaal */
+            justify-content: center; /* Centreer de menu-items horizontaal */
+            background-color: gray; /* Grijze achtergrondkleur voor menu-items */
         }
 
         ul.menu li {
@@ -33,54 +33,66 @@
 
         ul.menu li a {
             text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            transition: background-color 0.3s, color 0.3s;
+            color: white; /* Witte tekstkleur voor menu-items */
+            padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
+            transition: background-color 0.3s, color 0.3s; /* Voeg vloeiende hover-effecten toe */
         }
 
         ul.menu li a:hover {
-            background-color: beige;
-            color: gray;
+            background-color: beige; /* Beige achtergrondkleur bij hover */
+            color: gray; /* Verander de tekstkleur bij hover */
         }
 
         /* CSS voor de inhoud van de pagina */
         .content {
-            padding: 20px;
+            padding: 20px; /* Voeg wat ruimte rond de inhoud toe */
         }
 
-        /* CSS voor de tekstinhoud */
-        .text {
-            text-align: justify;
+        /* Stijlen voor de alinea's */
+        .content p {
+            margin: 10px 0; /* Voeg 10px marges boven en onder de alinea's toe */
+            font-size: 18px; /* Grootte van de tekst */
         }
+
+        /* Stijlen voor de tussenkopjes */
+        .content h2 {
+            color: black; /* Zet de tekstkleur van tussenkopjes op zwart */
+            font-weight: bold; /* Maak de tussenkopjes vetgedrukt */
+            margin-top: 20px; /* Ruimte boven de tussenkopjes */
+        }
+
+        /* Stijlen voor de afbeelding */
+        .content img {
+            max-width: 100%; /* Zorg ervoor dat de afbeelding niet breder is dan de beschikbare ruimte */
+            height: auto; /* Behoud de oorspronkelijke hoogte-breedteverhouding van de afbeelding */
+            margin: 20px 0; /* Voeg ruimte boven en onder de afbeelding toe */
+        }
+
+        /* ... andere stijlen voor je pagina ... */
     </style>
 </head>
 <body>
-    <!-- Container voor het menu bovenaan de pagina -->
+    <!-- Container voor het menu bovenaan de website -->
     <div class="menu-container">
         <!-- Het menu zelf -->
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
-            <li><a href="cpu.html">Algemene Informatie</a></li>
             <li><a href="binair-stelsel.html">Binair stelsel</a></li>
             <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="compressie.html">Compressie</a></li>
-            <li><a href="3-lagenmodel.html">Bestandsformaten</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="3-lagenmodel.html">3 Lagenmodel</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
-    <!-- Inhoud van de pagina -->
+    <!-- Hier komt de inhoud van je "Binair Stelsel" pagina -->
     <div class="content">
-        <h1>Binair Stelsel: De Taal van Computers</h1>
-        <div class="text">
-            <p>Het binair stelsel, ook wel bekend als het tweetallige stelsel, is de basis van de taal die computers begrijpen en gebruiken om informatie op te slaan en te verwerken. In tegenstelling tot het decimale stelsel dat we dagelijks gebruiken, waarin getallen worden weergegeven met cijfers van 0 tot 9, bestaat het binair stelsel uit slechts twee cijfers: 0 en 1. Dit eenvoudige systeem vormt de kern van alle digitale computers en vormt de basis voor alle digitale informatie.</p>
+        <h1>Binair Stelsel</h1>
+        <p>Het binair stelsel, ook wel bekend als het tweetallige stelsel, is de basis van de taal die computers begrijpen en gebruiken om informatie op te slaan en te verwerken. In tegenstelling tot het decimale stelsel dat we dagelijks gebruiken, waarin getallen worden weergegeven met cijfers van 0 tot 9, bestaat het binair stelsel uit slechts twee cijfers: 0 en 1. Dit eenvoudige systeem vormt de kern van alle digitale computers en vormt de basis voor alle digitale informatie.</p>
+        
+        <p>In het binair stelsel wordt elke eenheid van informatie een "bit" genoemd. Een bit kan slechts twee waarden hebben: 0 of 1, wat overeenkomt met "uit" en "aan" in elektronische termen. Bits worden gecombineerd om complexere informatie weer te geven. Acht bits vormen samen een "byte", wat de basis eenheid is voor het opslaan van gegevens in computers. Een byte kan 256 verschillende waarden aannemen (2^8).</p>
+        
+        <!-- Voeg hier de nieuwe afbeelding toe met een kleinere breedte -->
+        <img src="https://azurplus.fr/wp-content/uploads/1606737888_Quest-ce-que-le-binaire-et-pourquoi-les-ordinateurs-lutilisent-ils.png" alt="Een illustratie van het binaire stelsel" width="600">
 
-            <p>Bits en bytes zijn de bouwstenen van gegevens in het binair stelsel. Een bit kan slechts twee waarden hebben: 0 of 1, wat overeenkomt met "uit" en "aan" in elektronische termen. Bits worden gecombineerd om complexere informatie weer te geven. Acht bits vormen samen een byte, wat de basis eenheid is voor het opslaan van gegevens in computers. Een byte kan 256 verschillende waarden aannemen (2^8).</p>
-
-            <p>Om tekst en tekens in computers weer te geven, wordt vaak de ASCII-tabel gebruikt. ASCII staat voor "American Standard Code for Information Interchange" en is een standaard voor het toewijzen van numerieke waarden aan tekens, zoals letters, cijfers, leestekens en speciale symbolen. Elke letter en symbool in de tabel heeft een unieke binair gecodeerde waarde die wordt gebruikt om tekst te vertegenwoordigen en op te slaan in computers.</p>
-
-            <p>Het begrijpen van het binair stelsel is de sleutel tot het begrijpen van de werking van computers en is een basisvaardigheid voor elke programmeur of IT-professional. In de wereld van computers en technologie is het binair stelsel de taal waarin machines communiceren en functioneren. Het is de basis van alles wat we doen met digitale apparaten en vormt de ruggengraat van de moderne informatietechnologie.</p>
-        </div>
-    </div>
-</body>
-</html>
+        <p>Om tekst en tekens in computers weer te geven, wordt vaak de ASCII-tabel gebruikt. ASCII staat voor "American Standard Code for Information Interchange" en
