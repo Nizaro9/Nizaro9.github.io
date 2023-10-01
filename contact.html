@@ -10,9 +10,9 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Het centrum van de pagina uitlijnen */
-            justify-content: center; /* Verticaal centreren */
-            min-height: 100vh; /* Volledige viewporthoogte innemen */
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
 
         /* CSS voor de container van het menu */
@@ -50,12 +50,15 @@
 
         /* CSS voor de inhoud van de pagina */
         .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             padding: 20px;
         }
 
-        /* Stijlen voor de contactgegevens */
+        /* CSS voor de contactgegevens */
         .contact {
-            width: 60%;
+            flex: 1; /* Laat contactgegevens de linkerhelft innemen */
             padding: 20px;
             box-sizing: border-box;
         }
@@ -65,9 +68,11 @@
             margin-bottom: 10px;
         }
 
-        /* Stijlen voor het contactformulier */
+        /* CSS voor het contactformulier */
         form {
-            margin-top: 20px; /* Ruimte boven het formulier toevoegen */
+            flex: 1; /* Laat het formulier de rechterhelft innemen */
+            padding: 20px;
+            box-sizing: border-box;
         }
 
         form label,
@@ -102,7 +107,7 @@
             <li><a href="cpu.html">Algemene Informatie</a></li>
             <li><a href="binair-stelsel.html">Binair stelsel</a></li>
             <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="compressie.html">Compressie</a></li> <!-- Nieuw item "Compressie" -->
+            <li><a href="compressie.html">Compressie</a></li>
             <li><a href="3-lagenmodel.html">Bestandsformaten</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -118,8 +123,8 @@
             <p>Email: <a href="mailto:Nizar.boukhari@vlietlandcollege.nl">Nizar.boukhari@vlietlandcollege.nl</a></p>
         </div>
 
-        <h2>Contactformulier</h2>
         <form id="contact-form">
+            <h1>Contactformulier</h1>
             <label for="name">Naam:</label>
             <input type="text" id="name" name="name" required><br>
 
