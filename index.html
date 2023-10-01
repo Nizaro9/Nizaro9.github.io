@@ -64,16 +64,9 @@
             align-items: center; /* Plaats de afbeeldingen in het midden van de rechterkant */
         }
 
-        .images img:first-child {
+        .images img {
             max-width: 100%;
             height: auto;
-            width: 400px; /* Maak de eerste afbeelding breder */
-        }
-
-        .images img:last-child {
-            max-width: 100%;
-            height: auto;
-            width: 300px; /* Pas de breedte van de tweede afbeelding aan zoals gewenst */
         }
 
         /* Extra CSS voor meer ruimte tussen alinea's */
@@ -83,18 +76,28 @@
 
         /* CSS voor de social media iconen en footer */
         .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 20px;
-            background-color: gray;
+            background-color: gray; /* Achtergrondkleur van de footer is nu hetzelfde als de menubalk */
             color: white;
             text-align: center;
             padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .footer a {
             margin-left: 10px;
+        }
+
+        /* Aangepaste Facebook- en Instagram-pictogrammen */
+        .facebook-icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        .instagram-icon {
+            width: 30px;
+            height: 30px;
         }
     </style>
 </head>
@@ -133,10 +136,10 @@
         <span>Made by Nizar Boukhari</span>
         <div>
             <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
-                <img src="instagram-logo.png" alt="Instagram">
+                <img class="instagram-icon" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="Instagram">
             </a>
             <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
-                <img src="facebook-logo.png" alt="Facebook">
+                <img class="facebook-icon" src="https://img.freepik.com/premium-vector/facebook-app-pictogram-social-media-logo-vector-illustratie-meta_277909-402.jpg" alt="Facebook">
             </a>
         </div>
     </div>
