@@ -5,9 +5,143 @@
     <style>
         /* CSS voor de achtergrondkleur van de hele website */
         body {
-            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
-            margin: 0; /* Verwijder standaardmarges van de pagina */
-            font-family: Arial, sans-serif; /* Kies een standaard lettertype */
+            background-color: beige;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
-       
+        /* CSS voor de container van het menu */
+        .menu-container {
+            background-color: gray;
+            font-family: 'Comic Neue', cursive;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* CSS voor het menu zelf */
+        ul.menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: gray;
+        }
+
+        ul.menu li {
+            margin-right: 20px;
+        }
+
+        ul.menu li a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        ul.menu li a:hover {
+            background-color: beige;
+            color: gray;
+        }
+
+        /* CSS voor de inhoud van de pagina */
+        .content {
+            padding: 20px;
+        }
+
+        /* Stijlen voor de contactgegevens */
+        .contact {
+            float: left;
+            width: 40%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .contact h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        /* Stijlen voor het contactformulier */
+        form {
+            width: 60%;
+        }
+
+        form label,
+        form input,
+        form textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        /* Stijlen voor de submit-knop */
+        form input[type="submit"] {
+            background-color: gray;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ... andere stijlen voor je pagina ... */
+    </style>
+</head>
+<body>
+    <!-- Container voor het menu bovenaan de website -->
+    <div class="menu-container">
+        <!-- Het menu zelf -->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="binair-stelsel.html">Binair stelsel</a></li>
+            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="3-lagenmodel.html">3 Lagenmodel</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hier komt de inhoud van je "Contact" pagina -->
+    <div class="content">
+        <div class="contact">
+            <h1>Contactgegevens</h1>
+            <p>Heb je vragen of wil je meer weten over de onderwerpen? Neem gerust contact met ons op.</p>
+            <p>Adres: Apollolaan 262</p>
+            <p>Telefoon: +31 123 456 789</p>
+            <p>Email: <a href="mailto:Nizar.boukhari@vlietlandcollege.nl">Nizar.boukhari@vlietlandcollege.nl</a></p>
+        </div>
+
+        <h2>Contactformulier</h2>
+        <form id="contact-form">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Bericht:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <input type="submit" value="Verstuur">
+        </form>
+        
+        <script>
+            // JavaScript-functie om het ingediende formulier weer te geven
+            document.getElementById("contact-form").addEventListener("submit", function(event) {
+                event.preventDefault();
+                var formData = new FormData(event.target);
+                var formObject = {};
+                formData.forEach(function(value, key) {
+                    formObject[key] = value;
+                });
+
+                // Hier kun je de ingediende gegevens naar een server sturen of andere acties ondernemen.
+                // Voor nu tonen we een alert met de ingediende gegevens.
+                alert("Bericht verzonden!\n\nNaam: " + formObject.name + "\nEmail: " + formObject.email + "\nBericht: " + formObject.message);
+            });
+        </script>
+    </div>
+</body>
+</html>
