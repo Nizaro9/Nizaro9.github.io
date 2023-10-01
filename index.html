@@ -59,13 +59,16 @@
         /* CSS voor de afbeeldingen */
         .images {
             flex: 1;
-            text-align: right; /* Plaats de afbeelding helemaal aan de rechterkant */
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
         }
 
         .images img {
+            margin-bottom: 10px;
             max-width: 100%;
             height: auto;
-            width: 150px; /* Maak de afbeelding kleiner */
+            width: 300px; /* Pas de breedte aan zoals gewenst */
         }
 
         /* Extra CSS voor meer ruimte tussen alinea's */
@@ -73,36 +76,19 @@
             margin-bottom: 20px;
         }
 
-        /* CSS voor de social media iconen en footer */
+        /* CSS voor de social media iconen */
         .footer {
-            background-color: gray; /* Achtergrondkleur van de footer is nu hetzelfde als de menubalk */
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            background-color: gray;
             color: white;
             text-align: center;
             padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
         .footer a {
             margin-left: 10px;
-        }
-
-        /* Aangepaste Facebook- en Instagram-pictogrammen */
-        .facebook-icon {
-            width: 30px;
-            height: 30px;
-        }
-
-        .instagram-icon {
-            width: 30px;
-            height: 30px;
-        }
-
-        /* CSS voor het midden van de footer */
-        .footer-middle {
-            flex: 1;
-            text-align: center;
         }
     </style>
 </head>
@@ -138,20 +124,13 @@
 
     <!-- Footer -->
     <div class="footer">
-        <span>Made by Nizar Boukhari</span>
-        <div class="footer-middle">
-            <!-- Hier kun je extra tekst toevoegen in het midden van de footer -->
-            <p>Iets in het midden</p>
-        </div>
-        <div>
-            <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
-                <img class="instagram-icon" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
-                <img class="facebook-icon" src="https://img.freepik.com/premium-vector/facebook-app-pictogram-social-media-logo-vector-illustratie-meta_277909-402.jpg" alt="Facebook">
-            </a>
-        </div>
+        <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
+            <img src="instagram-logo.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
+            <img src="facebook-logo.png" alt="Facebook">
+        </a>
+        &copy; 2023 Nizar Boukhari - Alle rechten voorbehouden
     </div>
 </body>
 </html>
-``
