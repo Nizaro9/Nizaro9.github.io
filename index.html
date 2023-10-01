@@ -44,37 +44,51 @@
 
         /* CSS voor de inhoud van de pagina */
         .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             padding: 20px;
         }
 
+        /* CSS voor de tekstinhoud */
+        .text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        /* CSS voor de afbeeldingen */
+        .images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .images img {
+            margin-bottom: 10px;
+            max-width: 100%;
+            height: auto;
+            width: 300px; /* Pas de breedte aan zoals gewenst */
+        }
+
         /* Extra CSS voor meer ruimte tussen alinea's */
-        .content p {
+        .text p {
             margin-bottom: 20px;
         }
 
         /* CSS voor de social media iconen */
-        .social-icons {
-            margin-right: 20px;
-        }
-
-        .social-icons a {
-            margin-right: 10px;
-            text-decoration: none;
-        }
-
-        .social-icons img {
-            width: 30px;
-            height: 30px;
-            vertical-align: middle;
-        }
-
-        /* Footer */
         .footer {
+            display: flex;
+            justify-content: flex-end;
             margin-top: 20px;
             background-color: gray;
             color: white;
             text-align: center;
             padding: 10px;
+        }
+
+        .footer a {
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -94,29 +108,29 @@
 
     <!-- Hier komt de inhoud van je homepage -->
     <div class="content">
-        <h1>Welkom op Nizar's Website</h1>
-        <p>Mijn naam is Nizar Boukhari, en ik heet je van harte welkom op mijn website!</p>
-        <p>Ik zit momenteel in havo 4 op het Vlietland College in Leiden. Vorig jaar behaalde ik mijn mavo-diploma en stroomde ik door naar de havo.</p>
-        <p>Deze website is ontstaan als onderdeel van een schoolopdracht voor het vak Informatica. Het was mijn eerste echte ervaring met coderen in talen zoals HTML en CSS. Deze uitdaging was leerzaam en bracht me nieuwe vaardigheden bij.</p>
-        <p>Als je zelf iets nieuws wilt leren, bekijk dan mijn website, waar ik uitleg geef over verschillende informatica-gerelateerde onderwerpen.</p>
-        <p>Welkom op mijn website, en laten we samen de wereld van informatica verkennen!</p>
+        <div class="text">
+            <h1>Welkom op Nizar's Website</h1>
+            <p>Mijn naam is Nizar Boukhari, en ik heet je van harte welkom op mijn website!</p>
+            <p>Ik zit momenteel in havo 4 op het Vlietland College in Leiden. Vorig jaar behaalde ik mijn mavo-diploma en stroomde ik door naar de havo.</p>
+            <p>Deze website is ontstaan als onderdeel van een schoolopdracht voor het vak Informatica. Het was mijn eerste echte ervaring met coderen in talen zoals HTML en CSS. Deze uitdaging was leerzaam en bracht me nieuwe vaardigheden bij.</p>
+            <p>Als je zelf iets nieuws wilt leren, bekijk dan mijn website, waar ik uitleg geef over verschillende informatica-gerelateerde onderwerpen.</p>
+            <p>Welkom op mijn website, en laten we samen de wereld van informatica verkennen!</p>
+        </div>
+        <div class="images">
+            <img src="https://www.hollandvlaggen.nl/wp-content/uploads/2019/07/Wereldvlaggen20-20Vlag20Marokko-1440x929.png" alt="Vlag Marokko | Holland Vlaggen"/>
+            <img src="https://static.wixstatic.com/media/7335d9_829d4096aa6b40da82e6ab3f3b1865f5~mv2.jpeg/v1/fill/w_640,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/7335d9_829d4096aa6b40da82e6ab3f3b1865f5~mv2.jpeg" alt="The Art of Moroccan Design Aesthetics"/>
+        </div>
     </div>
 
-    <!-- Social media iconen -->
-    <div class="social-icons">
+    <!-- Footer -->
+    <div class="footer">
         <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
             <img src="instagram-logo.png" alt="Instagram">
         </a>
         <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
             <img src="facebook-logo.png" alt="Facebook">
         </a>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer">
         &copy; 2023 Nizar Boukhari - Alle rechten voorbehouden
     </div>
 </body>
 </html>
-
-
