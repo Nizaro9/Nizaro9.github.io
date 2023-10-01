@@ -5,21 +5,16 @@
     <style>
         /* CSS voor de achtergrondkleur van de hele website */
         body {
-            background-color: beige;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* Het centrum van de pagina uitlijnen */
-            justify-content: center; /* Verticaal centreren */
-            min-height: 100vh; /* Volledige viewporthoogte innemen */
+            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
+            margin: 0; /* Verwijder standaardmarges van de pagina */
+            font-family: Arial, sans-serif; /* Kies een standaard lettertype */
         }
 
         /* CSS voor de container van het menu */
         .menu-container {
-            background-color: gray;
-            font-family: 'Comic Neue', cursive;
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+            background-color: gray; /* Grijze balk voor het menu */
+            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe aan de grijze balk */
         }
 
         /* CSS voor het menu zelf */
@@ -27,9 +22,9 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color: gray;
+            display: flex; /* Maak het menu horizontaal */
+            justify-content: center; /* Centreer de menu-items horizontaal */
+            background-color: gray; /* Grijze achtergrondkleur voor menu-items */
         }
 
         ul.menu li {
@@ -38,67 +33,85 @@
 
         ul.menu li a {
             text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            transition: background-color 0.3s, color 0.3s;
+            color: white; /* Witte tekstkleur voor menu-items */
+            padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
+            transition: background-color 0.3s, color 0.3s; /* Voeg vloeiende hover-effecten toe */
         }
 
         ul.menu li a:hover {
-            background-color: beige;
-            color: gray;
+            background-color: beige; /* Beige achtergrondkleur bij hover */
+            color: gray; /* Verander de tekstkleur bij hover */
         }
 
         /* CSS voor de inhoud van de pagina */
         .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             padding: 20px;
         }
 
-        /* Stijlen voor de contactgegevens */
-        .contact {
-            width: 60%;
+        /* CSS voor de tekstinhoud */
+        .text {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        /* CSS voor de afbeeldingen */
+        .images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .images img {
+            margin-bottom: 10px;
+            max-width: 100%;
+            height: auto;
+            width: 300px; /* Pas de breedte aan zoals gewenst */
+        }
+
+        /* Extra CSS voor meer ruimte tussen alinea's */
+        .text p {
+            margin-bottom: 20px;
+        }
+
+        /* CSS voor de contactformulier container */
+        .contact-container {
+            flex: 1;
             padding: 20px;
-            box-sizing: border-box;
+            background-color: white; /* Witte achtergrondkleur voor het contactformulier */
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe */
+            margin-left: 20px; /* Ruimte tussen de tekst en het contactformulier */
         }
 
-        .contact h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
+        /* CSS voor de contactformulier secties */
+        .contact-section {
+            margin-bottom: 20px;
         }
 
-        /* Stijlen voor het contactformulier */
-        form {
-            margin-top: 20px; /* Ruimte boven het formulier toevoegen */
-        }
-
-        form label,
-        form input,
-        form textarea {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        form textarea {
-            resize: vertical;
-        }
-
-        /* Stijlen voor de submit-knop */
-        form input[type="submit"] {
-            background-color: gray;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* Stijlen voor de footer */
+        /* Footer stijlen (hergebruikt van homepage) */
         .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: gray;
             color: white;
             text-align: center;
             padding: 10px;
+            margin-top: 20px; /* Ruimte boven de footer */
         }
 
-        /* ... andere stijlen voor je pagina ... */
+        .footer a {
+            margin-left: 10px;
+        }
+
+        /* Grotere logo's in de footer (hergebruikt van homepage) */
+        .footer img {
+            width: 25px;
+            height: 25px;
+        }
     </style>
 </head>
 <body>
@@ -110,7 +123,7 @@
             <li><a href="cpu.html">Algemene Informatie</a></li>
             <li><a href="binair-stelsel.html">Binair stelsel</a></li>
             <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="compressie.html">Compressie</a></li> <!-- Nieuw item "Compressie" -->
+            <li><a href="compressie.html">Compressie</a></li>
             <li><a href="3-lagenmodel.html">Bestandsformaten</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -118,30 +131,17 @@
 
     <!-- Hier komt de inhoud van je "Contact" pagina -->
     <div class="content">
-        <div class="contact">
-            <h1>Contactgegevens</h1>
-            <p>Heb je vragen of wil je meer weten over de onderwerpen? Neem gerust contact met ons op.</p>
-            <p>Adres: Apollolaan 262</p>
-            <p>Telefoon: +31 123 456 789</p>
-            <p>Email: <a href="mailto:Nizar.boukhari@vlietlandcollege.nl">Nizar.boukhari@vlietlandcollege.nl</a></p>
+        <div class="text">
+            <h1>Contact</h1>
+            <p>Heb je vragen, opmerkingen of wil je gewoon hallo zeggen? Neem gerust contact met mij op via het onderstaande formulier.</p>
         </div>
-
-        <h2>Contactformulier</h2>
-        <form id="contact-form">
-            <label for="name">Naam:</label>
-            <input type="text" id="name" name="name" required><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-
-            <label for="message">Bericht:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br>
-
-            <input type="submit" value="Verstuur">
-        </form>
+        <div class="contact-container">
+            <h2>Contactformulier</h2>
+            <!-- Voeg hier je contactformulier HTML-code toe -->
+        </div>
     </div>
-    
-    <!-- Footer -->
+
+    <!-- Footer (hergebruikt van homepage) -->
     <div class="footer">
         <span>Made by Nizar Boukhari</span>
         <div>
