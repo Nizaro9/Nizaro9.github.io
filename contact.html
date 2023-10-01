@@ -10,9 +10,9 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
+            align-items: center; /* Het centrum van de pagina uitlijnen */
+            justify-content: center; /* Verticaal centreren */
+            min-height: 100vh; /* Volledige viewporthoogte innemen */
         }
 
         /* CSS voor de container van het menu */
@@ -50,16 +50,12 @@
 
         /* CSS voor de inhoud van de pagina */
         .content {
-            display: flex; /* Laat de inhoud in een rij staan */
-            justify-content: space-between; /* Plaats de inhoud aan de uiteinden van de rij */
-            align-items: flex-start; /* Plaats de inhoud aan de bovenkant van de rij */
-            max-width: 800px;
-            margin-top: 20px; /* Voeg ruimte boven de inhoud toe */
+            padding: 20px;
         }
 
         /* Stijlen voor de contactgegevens */
         .contact {
-            width: 40%; /* Geef de contactgegevens een breedte van 40% */
+            width: 60%;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -71,9 +67,7 @@
 
         /* Stijlen voor het contactformulier */
         form {
-            width: 50%; /* Geef het contactformulier een breedte van 50% */
-            padding: 20px;
-            box-sizing: border-box;
+            margin-top: 20px; /* Ruimte boven het formulier toevoegen */
         }
 
         form label,
@@ -96,6 +90,14 @@
             cursor: pointer;
         }
 
+        /* Stijlen voor de footer */
+        .footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
         /* ... andere stijlen voor je pagina ... */
     </style>
 </head>
@@ -108,7 +110,7 @@
             <li><a href="cpu.html">Algemene Informatie</a></li>
             <li><a href="binair-stelsel.html">Binair stelsel</a></li>
             <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="compressie.html">Compressie</a></li>
+            <li><a href="compressie.html">Compressie</a></li> <!-- Nieuw item "Compressie" -->
             <li><a href="3-lagenmodel.html">Bestandsformaten</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -124,6 +126,7 @@
             <p>Email: <a href="mailto:Nizar.boukhari@vlietlandcollege.nl">Nizar.boukhari@vlietlandcollege.nl</a></p>
         </div>
 
+        <h2>Contactformulier</h2>
         <form id="contact-form">
             <label for="name">Naam:</label>
             <input type="text" id="name" name="name" required><br>
@@ -136,22 +139,19 @@
 
             <input type="submit" value="Verstuur">
         </form>
-        
-        <script>
-            // JavaScript-functie om het ingediende formulier weer te geven
-            document.getElementById("contact-form").addEventListener("submit", function(event) {
-                event.preventDefault();
-                var formData = new FormData(event.target);
-                var formObject = {};
-                formData.forEach(function(value, key) {
-                    formObject[key] = value;
-                });
-
-                // Hier kun je de ingediende gegevens naar een server sturen of andere acties ondernemen.
-                // Voor nu tonen we een alert met de ingediende gegevens.
-                alert("Bericht verzonden!\n\nNaam: " + formObject.name + "\nEmail: " + formObject.email + "\nBericht: " + formObject.message);
-            });
-        </script>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+        <span>Made by Nizar Boukhari</span>
+        <div>
+            <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
+                <img class="instagram-icon" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
+                <img class="facebook-icon" src="https://img.freepik.com/premium-vector/sociale-media-pictogram-illustratie-facebook-facebook-pictogram-vectorillustratie_561158-2134.jpg" alt="Facebook Logo Png - Gratis vectoren en PSD om te downloaden" style="width: 30px; height: 30px;">
+            </a>
+        </div>
     </div>
 </body>
 </html>
