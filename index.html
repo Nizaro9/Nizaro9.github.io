@@ -76,10 +76,11 @@
             margin-bottom: 20px;
         }
 
-        /* CSS voor de social media iconen */
+        /* CSS voor de footer */
         .footer {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
+            align-items: center; /* Hiermee centreren we de inhoud verticaal */
             margin-top: 20px;
             background-color: gray;
             color: white;
@@ -89,6 +90,13 @@
 
         .footer a {
             margin-left: 10px;
+        }
+
+        /* CSS voor "Made by Nizar" */
+        .made-by {
+            text-align: center; /* Hiermee centreren we de tekst horizontaal */
+            font-style: italic;
+            font-size: 12px;
         }
     </style>
 </head>
@@ -125,12 +133,14 @@
     <!-- Footer -->
     <div class="footer">
         <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
-            <img src="instagram-logo.png" alt="Instagram">
+            <img src="https://cdn.icon-icons.com/icons2/2429/PNG/512/facebook_logo_icon_147291.png" alt="Facebook">
         </a>
         <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
-            <img src="facebook-logo.png" alt="Facebook">
+            <img src="https://thumbs.dreamstime.com/b/instagram-sociaal-media-embleem-cirkel-vectorillustartion-146803518.jpg" alt="Instagram">
         </a>
-        &copy; 2023 Nizar Boukhari - Alle rechten voorbehouden
+        <div class="made-by">
+            Made by Nizar
+        </div>
     </div>
 </body>
 </html>
