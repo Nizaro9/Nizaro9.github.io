@@ -1,83 +1,141 @@
-.third-level-menu
-{
-    position: absolute;
-    top: 0;
-    right: -150px;
-    width: 150px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-
+/* Algemeen stijlen */
 body {
-    background-color: rgb(90, 215, 240);
     margin: 0;
-    }
-
-.third-level-menu > li
-{
-    height: 30px;
-    background: #999999;
-}
-.third-level-menu > li:hover { background: #CCCCCC; }
-        
-.second-level-menu
-{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    width: 150px;
-    list-style: none;
     padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header en menu stijlen */
+.menu-container {
+    background-color: #2c3e50;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul.menu {
+    list-style-type: none;
     margin: 0;
-    display: none;
-}
-
-.second-level-menu > li
-{
-    position: relative;
-    height: 30px;
-    background: #999999;
-}
-.second-level-menu > li:hover { background: #CCCCCC; }
-
-.top-level-menu
-{
-    list-style: none;
     padding: 0;
-    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-.top-level-menu > li
-{
-    position: relative;
-    float: left;
-    height: 30px;
-    width: 150px;
-    background-color: #999999;
-}
-.top-level-menu > li:hover { background-color: #CCCCCC; }
-
-.top-level-menu li:hover > ul
-{
-    /* On hover, display the next level's menu */
-    display: inline;
+ul.menu li {
+    margin: 0 15px;
 }
 
-
-/* Menu Link Styles */
-
-.top-level-menu a /* Apply to all links inside the multi-level menu */
-{
-    font: bold 14px Arial, Helvetica, sans-serif;
-    color: #FFFFFF;
+ul.menu li a {
     text-decoration: none;
-    padding: 0 0 0 10px;
-
-    /* Make the link cover the entire list item-container */
-    display: block;
-    line-height: 30px;
+    color: #ecf0f1;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
 }
-.top-level-menu a:hover { color: #000000; }
+
+ul.menu li a:hover {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 5px;
+}
+
+/* Dropdown menu stijlen */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #ecf0f1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.submenu a {
+    color: #2c3e50;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.submenu a:hover {
+    background-color: #bdc3c7;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Inhoud stijlen */
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.text h1 {
+    font-size: 32px;
+    color: #2980b9;
+}
+
+.text p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.video iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer stijlen */
+.footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid #2980b9;
+    font-size: 14px;
+}
+
+.footer img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.footer a {
+    color: #ecf0f1;
+}
+
+.footer a:hover {
+    color: #2980b9;
+    transition: color 0.3s;
+}
