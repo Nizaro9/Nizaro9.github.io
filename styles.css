@@ -24,6 +24,7 @@ ul.menu {
 
 ul.menu li {
     margin: 0 15px;
+    position: relative; /* Voor dropdown-functionaliteit */
 }
 
 ul.menu li a {
@@ -42,14 +43,15 @@ ul.menu li a:hover {
 }
 
 /* Dropdown menu stijlen */
-.dropdown {
-    position: relative;
-    display: inline-block;
+.dropdown:hover .submenu {
+    display: block;
 }
 
 .submenu {
     display: none;
     position: absolute;
+    top: 40px;
+    left: 0;
     background-color: #ecf0f1;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
@@ -57,25 +59,33 @@ ul.menu li a:hover {
     border-radius: 5px;
 }
 
-.dropdown:hover .submenu {
-    display: block;
-}
-
-.submenu-right {
-    display: flex;
-    flex-direction: column;
-}
-
 .submenu a {
     color: #2c3e50;
     text-decoration: none;
     padding: 8px 12px;
     font-size: 14px;
+    display: block;
 }
 
 .submenu a:hover {
     background-color: #bdc3c7;
     color: white;
+    border-radius: 5px;
+}
+
+/* Submenu-right alleen zichtbaar bij hover op Fysieke Laag */
+.dropdown .submenu .dropdown:hover .submenu-right {
+    display: block;
+}
+
+.submenu-right {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: #ecf0f1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     border-radius: 5px;
 }
 
