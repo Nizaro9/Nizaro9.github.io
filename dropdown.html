@@ -1,18 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head> 
-<title>Welkom op Nizar's Website</title>
-<link rel="stylesheet" href="styles.css">
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welkom op Nizar's Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<ul class="top-level-menu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="Fysieke laag.html">Fysieke Laag</a></li>
-    <li><a href="index.html">Logische laag</a></li>
-    <li><a href="index.html">Toepassing laag</a></li>
-    <li><a href="index.html">Nieuw onderwerp</a></li>
-    <li><a href="contact.html">Contact</a></li>
-</ul>
+    <!-- Navigatie Menu -->
+    <ul class="top-level-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Fysieke-laag.html">Fysieke Laag</a></li>
+        <li><a href="Logische-laag.html">Logische Laag</a></li>
+        <li><a href="Toepassing-laag.html">Toepassing Laag</a></li>
+        <li><a href="nieuw-onderwerp.html">Nieuw Onderwerp</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
 
+    <!-- Dropdown menu -->
+    <nav>
+        <div class="dropdown">
+            <a id="nav-bar-item" href="dropdown.html">Drie Lagen Model</a>
+            <div class="submenu">
+                <div class="dropdown">
+                    <a href="Fysieke-laag.html">Fysieke Laag</a>
+                    <div class="submenu-right">
+                        <a href="processor.html">RAM</a>
+                        <a href="geheugen.html">ROM</a>
+                    </div>
+                </div>
+                <a href="Toepassingenlaag.html">Toepassing Laag</a>
+                <a href="Logische-laag.html">Logische Laag</a>
+            </div>
+        </div>
+    </nav>
 </body>
 </html>

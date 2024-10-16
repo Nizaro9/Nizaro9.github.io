@@ -1,126 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welkom op Nizar's Website</title>
-    <style>
-        /* CSS voor de achtergrondkleur van de hele website */
-        body {
-            background-color: beige;
-            margin: 0;
-        }
-
-        /* CSS voor de container van het menu */
-        .menu-container {
-            background-color: gray;
-            font-family: 'Comic Neue', cursive;
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        /* CSS voor het menu zelf */
-        ul.menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color: gray;
-        }
-
-        ul.menu li {
-            margin-right: 20px;
-        }
-
-        ul.menu li a {
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        ul.menu li a:hover {
-            background-color: beige;
-            color: gray;
-        }
-
-        /* CSS voor de inhoud van de pagina */
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 20px;
-        }
-
-        /* CSS voor de tekstinhoud */
-        .text {
-            flex: 1;
-            padding-right: 20px;
-        }
-
-        /* CSS voor de afbeeldingen */
-        .images {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-        }
-
-        .images img {
-            margin-bottom: 10px;
-            max-width: 100%;
-            height: auto;
-            width: 300px; /* Pas de breedte aan zoals gewenst */
-        }
-
-        /* Extra CSS voor meer ruimte tussen alinea's */
-        .text p {
-            margin-bottom: 20px;
-        }
-
-        /* CSS voor de social media iconen */
-        .footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: gray;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-
-        .footer a {
-            margin-left: 10px;
-        }
-
-        /* CSS voor de grotere logo's */
-        .footer img {
-            width: 25px; /* Aangepaste grootte voor de logo's */
-            height: 25px;
-        }
-
-        /* CSS om de video onderaan de inhoudstekst aan de rechterkant te plaatsen */
-        .video {
-            flex: 1;
-            text-align: right;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Link naar externe CSS -->
 </head>
 <body>
-<!-- Container voor het menu bovenaan de website -->
-<div class="menu-container">
-    <!-- Het menu zelf -->
-    <ul class="menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Algemeneinformatie.html">Algemene Informatie</a></li>
-        <li><a href="binair-stelsel.html">Binair stelsel</a></li>
-        <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-        <li><a href="compressie.html">Compressie</a></li> <!-- Nieuw item "Compressie" -->
-        <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
-        <li><a href="dropdown.html">3Lagenmodel</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</div>
+    <!-- Container voor het menu bovenaan de website -->
+    <div class="menu-container">
+        <!-- Het menu zelf -->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Algemeneinformatie.html">Algemene Informatie</a></li>
+            <li><a href="binair-stelsel.html">Binair stelsel</a></li>
+            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+            <li><a href="compressie.html">Compressie</a></li>
+            <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
+            <li><a href="dropdown.html">Drie Lagen Model</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
 
-    <!-- Hier komt de inhoud van je homepage -->
+    <!-- Dropdown menu -->
+    <nav>
+        <div class="dropdown">
+            <a id="nav-bar-item" href="dropdown.html">Drie Lagen Model</a>
+            <div class="submenu">
+                <div class="dropdown">
+                    <a href="Fysieke-laag.html">Fysieke Laag</a>
+                    <div class="submenu-right">
+                        <a href="processor.html">RAM</a>
+                        <a href="geheugen.html">ROM</a>
+                    </div>
+                </div>
+                <a href="Toepassingenlaag.html">Toepassing Laag</a>
+                <a href="Logische-laag.html">Logische Laag</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Inhoud van de homepage -->
     <div class="content">
         <div class="text">
             <h1>Welkom op Nizar's Website</h1>
@@ -135,18 +55,17 @@
         </div>
     </div>
 
-   <!-- Footer -->
-<div class="footer">
-    <span>Made by Nizar Boukhari</span>
-    <div>
-        <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
-            <img class="instagram-icon" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="Instagram">
-        </a>
-        <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
-            <img class="facebook-icon" src="https://img.freepik.com/premium-vector/sociale-media-pictogram-illustratie-facebook-facebook-pictogram-vectorillustratie_561158-2134.jpg" alt="Facebook Logo Png - Gratis vectoren en PSD om te downloaden" style="width: 30px; height: 30px;">
-        </a>
+    <!-- Footer -->
+    <div class="footer">
+        <span>Made by Nizar Boukhari</span>
+        <div>
+            <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
+                <img class="instagram-icon" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="Instagram">
+            </a>
+            <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
+                <img class="facebook-icon" src="https://img.freepik.com/premium-vector/sociale-media-pictogram-illustratie-facebook-facebook-pictogram-vectorillustratie_561158-2134.jpg" alt="Facebook Logo" style="width: 30px; height: 30px;">
+            </a>
+        </div>
     </div>
-</div>
 </body>
 </html>
-
