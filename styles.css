@@ -70,7 +70,7 @@ ul.menu li a:hover {
 
 .submenu a:hover {
     background-color: rgba(189, 195, 199, 0.8); /* Transparant hover-effect */
-    color: white;
+    color:  #2c3e50;
     border-radius: 5px;
 }
 
