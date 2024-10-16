@@ -1,70 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <title>Kleurmodellen - Nizar's Website</title>
-    <style>
-        /* CSS voor de achtergrondkleur van de hele website */
-        body {
-            background-color: beige; /* Beige achtergrondkleur voor de hele pagina */
-            margin: 0; /* Verwijder standaardmarges van de pagina */
-            font-family: Arial, sans-serif; /* Kies een standaard lettertype */
-        }
-
-        /* CSS voor de container van het menu */
-        .menu-container {
-            background-color: gray; /* Grijze balk voor het menu */
-            font-family: 'Comic Neue', cursive; /* Lettertype Comic Neue */
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Voeg een lichte schaduw toe aan de grijze balk */
-        }
-
-        /* CSS voor het menu zelf */
-        ul.menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex; /* Maak het menu horizontaal */
-            justify-content: center; /* Centreer de menu-items horizontaal */
-            background-color: gray; /* Grijze achtergrondkleur voor menu-items */
-        }
-
-        ul.menu li {
-            margin-right: 20px;
-        }
-
-        ul.menu li a {
-            text-decoration: none;
-            color: white; /* Witte tekstkleur voor menu-items */
-            padding: 10px 20px; /* Voeg padding toe om de grijze balk te creëren */
-            transition: background-color 0.3s, color 0.3s; /* Voeg vloeiende hover-effecten toe */
-        }
-
-        ul.menu li a:hover {
-            background-color: beige; /* Beige achtergrondkleur bij hover */
-            color: gray; /* Verander de tekstkleur bij hover */
-        }
-
-        /* CSS voor de inhoud van de pagina */
-        .content {
-            padding: 20px; /* Voeg wat ruimte rond de inhoud toe */
-        }
-
-        /* Stijlen voor de informatie over kleurenmodellen */
-        .color-info {
-            width: 70%; /* Geef de informatie 70% van de beschikbare breedte */
-            padding: 20px; /* Voeg wat ruimte binnen de informatie toe */
-            box-sizing: border-box; /* Zorg ervoor dat padding en borders binnen de breedte vallen */
-        }
-
-        /* Stijl voor de video */
-        .color-video {
-            width: 100%; /* Zorg ervoor dat de video de volledige breedte van de container gebruikt */
-            margin-top: 20px; /* Voeg wat ruimte boven de video toe */
-        }
-
-        /* ... andere stijlen voor je pagina ... */
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welkom op Nizar's Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link naar externe CSS -->
 </head>
 <body>
+    <!-- Container voor het menu bovenaan de website -->
+    <div class="menu-container">
+        <!-- Het menu zelf -->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Algemeneinformatie.html">Algemene Informatie</a></li>
+            <li><a href="binair-stelsel.html">Binair stelsel</a></li>
+            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
+            <li><a href="compressie.html">Compressie</a></li>
+            <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
+
+            <!-- Dropdown-menu voor 3 Lagen Model -->
+            <li class="dropdown">
+                <a href="dropdown.html">3 Lagen Model</a>
+                <ul class="submenu">
+                    <li class="dropdown">
+                        <a href="Fysieke-laag.html">Fysieke Laag</a>
+                        <ul class="submenu-right">
+                            <li><a href="RAMROM.html">RAM</a></li>
+                            <li><a href="RAMROM.html">ROM</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Toepassingenlaag.html">Toepassing Laag</a></li>
+                    <li><a href="Logische-laag.html">Logische Laag</a></li>
+                </ul>
+            </li>
+            
     <!-- Container voor het menu bovenaan de website -->
     <div class="menu-container">
         <!-- Het menu zelf -->
@@ -94,5 +63,20 @@
             <iframe width="704" height="396" src="https://www.youtube.com/embed/-b2pAEHEQZc" title="Color Models Explained (Additive &amp; Subtractive) | Digital Color" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
+</body>
+</html>
+
+<!-- Footer -->
+<div class="footer">
+    <span>Made by Nizar Boukhari</span>
+    <div>
+        <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
+            <img class="instagram-icon" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
+            <img class="facebook-icon" src="https://img.freepik.com/premium-vector/sociale-media-pictogram-illustratie-facebook-facebook-pictogram-vectorillustratie_561158-2134.jpg" alt="Facebook Logo" style="width: 30px; height: 30px;">
+        </a>
+    </div>
+</div>
 </body>
 </html>
