@@ -5,6 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welkom op Nizar's Website</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link naar externe CSS -->
+    <style>
+        /* Flexbox styling voor de content */
+        .content-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .video-content iframe {
+            width: 100%;
+            height: auto;
+            max-width: 400px; /* Maximale breedte voor de video */
+        }
+
+        /* Overige stijlen voor overzichtelijkheid */
+        .menu-container {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
 
@@ -38,34 +72,39 @@
         </ul>
     </div>
 
-    <!-- Hoofdinhoud van de pagina -->
-    <div class="content">
-        <h1>Bestandsformaten</h1>
-        <p>Bestandsformaten zijn als digitale talen die onze apparaten begrijpen. Ze vertellen een computer hoe gegevens moeten worden opgeslagen en weergegeven. Elk type gegevens, zoals tekst, afbeeldingen en video's, heeft zijn eigen speciale taal.</p>
+    <!-- Hoofdinhoud van de pagina: Tekst en Video naast elkaar -->
+    <div class="content-container">
+        <!-- Tekstinhoud -->
+        <div class="text-content">
+            <h1>Bestandsformaten</h1>
+            <p>Bestandsformaten zijn als digitale talen die onze apparaten begrijpen. Ze vertellen een computer hoe gegevens moeten worden opgeslagen en weergegeven. Elk type gegevens, zoals tekst, afbeeldingen en video's, heeft zijn eigen speciale taal.</p>
 
-        <h2>Waarom Zijn Ze Belangrijk?</h2>
-        <ul>
-            <li><strong>Compatibiliteit:</strong> Sommige bestanden werken alleen met specifieke programma's. Kies het juiste formaat zodat iedereen je bestanden kan openen.</li>
-            <li><strong>Grootte:</strong> Sommige formaten maken je bestanden kleiner, terwijl andere de kwaliteit behouden.</li>
-            <li><strong>Kwaliteit:</strong> Kies het formaat dat past bij het doel van je bestand. Foto's en video's hebben bijvoorbeeld andere formaten nodig dan tekst.</li>
-        </ul>
+            <h2>Waarom Zijn Ze Belangrijk?</h2>
+            <ul>
+                <li><strong>Compatibiliteit:</strong> Sommige bestanden werken alleen met specifieke programma's. Kies het juiste formaat zodat iedereen je bestanden kan openen.</li>
+                <li><strong>Grootte:</strong> Sommige formaten maken je bestanden kleiner, terwijl andere de kwaliteit behouden.</li>
+                <li><strong>Kwaliteit:</strong> Kies het formaat dat past bij het doel van je bestand. Foto's en video's hebben bijvoorbeeld andere formaten nodig dan tekst.</li>
+            </ul>
 
-        <h2>Bekende Bestandsformaten</h2>
-        <ul>
-            <li><strong>JPEG:</strong> Voor foto's.</li>
-            <li><strong>MP3:</strong> Voor muziek.</li>
-            <li><strong>PDF:</strong> Voor behoud van documentopmaak.</li>
-            <li><strong>MP4:</strong> Voor video's.</li>
-        </ul>
+            <h2>Bekende Bestandsformaten</h2>
+            <ul>
+                <li><strong>JPEG:</strong> Voor foto's.</li>
+                <li><strong>MP3:</strong> Voor muziek.</li>
+                <li><strong>PDF:</strong> Voor behoud van documentopmaak.</li>
+                <li><strong>MP4:</strong> Voor video's.</li>
+            </ul>
 
-        <h2>Conversie van Bestandsformaten</h2>
-        <p>Soms moet je bestanden omzetten naar een ander formaat. Gebruik online tools of software om dit te doen.</p>
+            <h2>Conversie van Bestandsformaten</h2>
+            <p>Soms moet je bestanden omzetten naar een ander formaat. Gebruik online tools of software om dit te doen.</p>
 
-        <!-- Video-informatie -->
-        <h2>Video:</h2>
-        <iframe width="704" height="396" src="https://www.youtube.com/embed/VVdmmN0su6E" title="What is a File Format?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <p>Nu begrijp je waarom bestandsformaten belangrijk zijn in de digitale wereld. Kies slim en deel moeiteloos digitale inhoud met iedereen!</p>
+        </div>
 
-        <p>Nu begrijp je waarom bestandsformaten belangrijk zijn in de digitale wereld. Kies slim en deel moeiteloos digitale inhoud met iedereen!</p>
+        <!-- Video inhoud -->
+        <div class="video-content">
+            <h2>Video:</h2>
+            <iframe src="https://www.youtube.com/embed/VVdmmN0su6E" title="What is a File Format?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
 
     <!-- Footer -->
