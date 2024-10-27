@@ -5,19 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welkom op Nizar's Website</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link naar externe CSS -->
+    <style>
+        /* Flexbox styling voor de content */
+        .content-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .text-content {
+            flex: 1;
+        }
+
+        .video-content iframe {
+            width: 100%;
+            height: auto;
+            max-width: 400px; /* Maximale breedte voor de video */
+        }
+
+        /* Overige stijlen voor overzichtelijkheid */
+        .menu-container {
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
 </head>
 <body>
-    <!-- Container voor het menu bovenaan de website -->
+
+    <!-- Navigatie Menu -->
     <div class="menu-container">
-        <!-- Het menu zelf -->
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="Algemeneinformatie.html">Algemene Informatie</a></li>
-            <li><a href="binair-stelsel.html">Binair stelsel</a></li>
+            <li><a href="binair-stelsel.html">Binair Stelsel</a></li>
             <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
             <li><a href="compressie.html">Compressie</a></li>
             <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
             <li><a href="contact.html">Contact</a></li>
+
             <!-- Dropdown-menu voor 3 Lagen Model -->
             <li class="dropdown">
                 <a href="dropdown.html">3 Lagen Model</a>
@@ -36,21 +71,27 @@
         </ul>
     </div>
 
-    <!-- Hier komt de inhoud van je "Compressie" pagina -->
-    <div class="content">
-        <h1>Compressie: Het Verkleinen van Bestanden</h1>
-        <p>Compressie is het proces van het verkleinen van digitale bestanden om opslagruimte te besparen en de overdrachtssnelheid te verbeteren. Het wordt veel gebruikt in de wereld van computers en technologie. Er zijn twee soorten compressie: lossless en lossy.</p>
+    <!-- Hoofdinhoud van de pagina: Tekst en Video naast elkaar -->
+    <div class="content-container">
+        <!-- Tekstinhoud -->
+        <div class="text-content">
+            <h1>Compressie: Het Verkleinen van Bestanden</h1>
+            <p>Compressie is het proces van het verkleinen van digitale bestanden om opslagruimte te besparen en de overdrachtssnelheid te verbeteren. Het wordt veel gebruikt in de wereld van computers en technologie. Er zijn twee soorten compressie: lossless en lossy.</p>
 
-        <h2>Lossless Compressie</h2>
-        <p>Lossless compressie is een methode waarbij bestanden worden verkleind zonder kwaliteitsverlies. Dit betekent dat je het originele bestand exact kunt herstellen na compressie. Lossless compressie wordt vaak gebruikt voor tekstbestanden en documenten.</p>
+            <h2>Lossless Compressie</h2>
+            <p>Lossless compressie is een methode waarbij bestanden worden verkleind zonder kwaliteitsverlies. Dit betekent dat je het originele bestand exact kunt herstellen na compressie. Lossless compressie wordt vaak gebruikt voor tekstbestanden en documenten.</p>
 
-        <h2>Lossy Compressie</h2>
-        <p>Lossy compressie verkleint bestanden met een klein kwaliteitsverlies. Dit wordt vaak toegepast op afbeeldingen, audio en video. Populaire formaten voor lossy compressie zijn JPEG voor afbeeldingen en MP3 voor audio.</p>
+            <h2>Lossy Compressie</h2>
+            <p>Lossy compressie verkleint bestanden met een klein kwaliteitsverlies. Dit wordt vaak toegepast op afbeeldingen, audio en video. Populaire formaten voor lossy compressie zijn JPEG voor afbeeldingen en MP3 voor audio.</p>
 
-        <p>Compressie is essentieel in de digitale wereld, omdat het helpt om gegevens efficiënter op te slaan en te delen. Het wordt gebruikt in alles, van het comprimeren van foto's voor websites tot het inpakken van bestanden in zip-archieven.</p>
+            <p>Compressie is essentieel in de digitale wereld, omdat het helpt om gegevens efficiënter op te slaan en te delen. Het wordt gebruikt in alles, van het comprimeren van foto's voor websites tot het inpakken van bestanden in zip-archieven.</p>
+        </div>
 
-        <!-- Voeg de video toe -->
-        <iframe width="704" height="396" src="https://www.youtube.com/embed/aYivE79zSTA" title="Easiest Way to Understand Compression" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- Video inhoud -->
+        <div class="video-content">
+            <h2>Video:</h2>
+            <iframe src="https://www.youtube.com/embed/aYivE79zSTA" title="Easiest Way to Understand Compression" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -65,5 +106,6 @@
             </a>
         </div>
     </div>
+
 </body>
 </html>
