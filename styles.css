@@ -53,7 +53,7 @@ ul.menu li a:hover {
     position: absolute;
     top: 40px;
     left: 0;
-    background-color: #2980b9; /* Aangepaste achtergrondkleur voor submenu */
+    background-color: rgba(236, 240, 241, 0.9); /* Lichte transparantie voor submenu */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
     padding: 10px;
@@ -61,7 +61,7 @@ ul.menu li a:hover {
 }
 
 .submenu a {
-    color: #ffffff; /* Witte tekstkleur voor betere leesbaarheid */
+    color: #87CEFA; /* Lichtblauw */
     text-decoration: none;
     padding: 8px 12px;
     font-size: 14px;
@@ -70,7 +70,7 @@ ul.menu li a:hover {
 
 .submenu a:hover {
     background-color: rgba(189, 195, 199, 0.8); /* Transparant hover-effect */
-    color: #2c3e50;
+    color: #2980b9; /* Donkerblauw bij hover */
     border-radius: 5px;
 }
 
@@ -84,14 +84,10 @@ ul.menu li a:hover {
     position: absolute;
     top: 0;
     left: 150px;
-    background-color: #2980b9; /* Aangepaste achtergrondkleur voor submenu */
+    background-color: rgba(236, 240, 241, 0.9); /* Transparant submenu rechts */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 5px;
-}
-
-.submenu-right a {
-    color: #ffffff; /* Witte tekstkleur voor betere leesbaarheid */
 }
 
 /* Inhoud stijlen */
