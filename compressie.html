@@ -3,71 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compressie</title>
+    <title>Welkom op Nizar's Website</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link naar externe CSS -->
-    <style>
-        /* Flexbox styling voor de content */
-        .content-container {
-            display: flex;
-            align-items: flex-start;
-            gap: 20px;
-            margin: 20px;
-        }
-
-        .text-content {
-            flex: 1;
-        }
-
-        .video-content iframe {
-            width: 100%;
-            height: auto;
-            max-width: 400px; /* Maximale breedte voor de video */
-        }
-
-        /* Overige stijlen voor overzichtelijkheid */
-        .menu-container {
-            margin-bottom: 20px;
-        }
-
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        ul {
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-    </style>
 </head>
 <body>
-
-    <!-- Navigatie Menu -->
+    <!-- Container voor het menu bovenaan de website -->
     <div class="menu-container">
+        <!-- Het menu zelf -->
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="Algemeneinformatie.html">Algemene Informatie</a></li>
-            <li><a href="binair-stelsel.html">Binair Stelsel</a></li>
+            <li><a href="binair-stelsel.html">Binair stelsel</a></li>
             <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
             <li><a href="compressie.html">Compressie</a></li>
             <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
-            <li><a href="contact.html">Contact</a></li>
 
             <!-- Dropdown-menu voor 3 Lagen Model -->
             <li class="dropdown">
                 <a href="dropdown.html">3 Lagen Model</a>
                 <ul class="submenu">
-                    <li>
-                        <a href="Fysieke-laag.html">Fysieke Laag</a>
+                    <li class="dropdown">
+                        <a href="fysiekelaag.html">Fysieke Laag</a>
                         <ul class="submenu-right">
-                            <li><a href="RAMROM.html">RAM</a></li>
-                            <li><a href="RAMROM.html">ROM</a></li>
+                            <li><a href="RAM.html">RAM</a></li>
+                            <li><a href="ROM.html">ROM</a></li>
                         </ul>
                     </li>
                     <li><a href="Toepassingenlaag.html">Toepassing Laag</a></li>
-                    <li><a href="Logische-laag.html">Logische Laag</a></li>
+                    <li><a href="logischelaag.html">Logische Laag</a></li>
                 </ul>
             </li>
+
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
