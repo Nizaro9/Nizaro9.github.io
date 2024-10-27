@@ -24,7 +24,7 @@ ul.menu {
 
 ul.menu li {
     margin: 0 15px;
-    position: relative;
+    position: relative; /* Voor dropdown-functionaliteit */
 }
 
 ul.menu li a {
@@ -34,11 +34,11 @@ ul.menu li a {
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
-    background-color: transparent;
+    background-color: transparent; /* Letters blijven zichtbaar */
 }
 
 ul.menu li a:hover {
-    background-color: rgba(236, 240, 241, 0.7);
+    background-color: rgba(236, 240, 241, 0.7); /* Doorzichtig effect */
     color: #2c3e50;
     border-radius: 5px;
 }
@@ -53,19 +53,15 @@ ul.menu li a:hover {
     position: absolute;
     top: 40px;
     left: 0;
-    background-color: rgba(236, 240, 241, 0.9);
+    background-color: #2980b9; /* Aangepaste achtergrondkleur voor submenu */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
     padding: 10px;
     border-radius: 5px;
 }
 
-.submenu li {
-    position: relative;
-}
-
 .submenu a {
-    color: #2c3e50;
+    color: #ffffff; /* Witte tekstkleur voor betere leesbaarheid */
     text-decoration: none;
     padding: 8px 12px;
     font-size: 14px;
@@ -73,12 +69,12 @@ ul.menu li a:hover {
 }
 
 .submenu a:hover {
-    background-color: rgba(189, 195, 199, 0.8);
+    background-color: rgba(189, 195, 199, 0.8); /* Transparant hover-effect */
     color: #2c3e50;
     border-radius: 5px;
 }
 
-/* Submenu-right stijlen */
+/* Submenu-right alleen zichtbaar bij hover op Fysieke Laag */
 .dropdown .submenu .dropdown:hover .submenu-right {
     display: block;
 }
@@ -88,10 +84,14 @@ ul.menu li a:hover {
     position: absolute;
     top: 0;
     left: 150px;
-    background-color: rgba(236, 240, 241, 0.9);
+    background-color: #2980b9; /* Aangepaste achtergrondkleur voor submenu */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 5px;
+}
+
+.submenu-right a {
+    color: #ffffff; /* Witte tekstkleur voor betere leesbaarheid */
 }
 
 /* Inhoud stijlen */
