@@ -1,102 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
-    <title>Contact - Jouw Website</title>
-    <style>
-        /* CSS voor de achtergrondkleur van de hele website */
-        body {
-            background-color: beige;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
-
-        /* CSS voor de container van het menu */
-        .menu-container {
-            background-color: gray;
-            font-family: 'Comic Neue', cursive;
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-        }
-
-        /* CSS voor het menu zelf */
-        ul.menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            background-color: gray;
-        }
-
-        ul.menu li {
-            margin-right: 20px;
-        }
-
-        ul.menu li a {
-            text-decoration: none;
-            color: white;
-            padding: 10px 20px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        ul.menu li a:hover {
-            background-color: beige;
-            color: gray;
-        }
-
-        /* CSS voor de inhoud van de pagina */
-        .content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 20px;
-        }
-
-        /* CSS voor de contactgegevens */
-        .contact {
-            flex: 1; /* Laat contactgegevens de linkerhelft innemen */
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        .contact h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        /* CSS voor het contactformulier */
-        form {
-            flex: 1; /* Laat het formulier de rechterhelft innemen */
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        form label,
-        form input,
-        form textarea {
-            display: block;
-            margin-bottom: 10px;
-        }
-
-        form textarea {
-            resize: vertical;
-        }
-
-        /* Stijlen voor de submit-knop */
-        form input[type="submit"] {
-            background-color: gray;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-
-        /* ... andere stijlen voor je pagina ... */
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welkom op Nizar's Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link naar externe CSS -->
 </head>
 <body>
     <!-- Container voor het menu bovenaan de website -->
@@ -110,6 +18,22 @@
             <li><a href="compressie.html">Compressie</a></li>
             <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
             <li><a href="contact.html">Contact</a></li>
+
+            <!-- Dropdown-menu voor 3 Lagen Model -->
+            <li class="dropdown">
+                <a href="dropdown.html">3 Lagen Model</a>
+                <ul class="submenu">
+                    <li>
+                        <a href="Fysieke-laag.html">Fysieke Laag</a>
+                        <ul class="submenu-right">
+                            <li><a href="RAMROM.html">RAM</a></li>
+                            <li><a href="RAMROM.html">ROM</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Toepassingenlaag.html">Toepassing Laag</a></li>
+                    <li><a href="Logische-laag.html">Logische Laag</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 
@@ -155,3 +79,13 @@
     </div>
 </body>
 </html>
+
+<!-- Footer -->
+<div class="footer">
+    <span>Made by Nizar Boukhari</span>
+    <div>
+        <a href="https://www.instagram.com/vlietlandcollege/" target="_blank">
+            <img class="instagram-icon" src="https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/vlietlandcollege/?locale=nl_NL" target="_blank">
+            <img class="facebook-icon" src="https://img.freepik.com/
