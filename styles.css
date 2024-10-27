@@ -19,7 +19,7 @@ ul.menu {
     margin: 0;
     padding: 0;
     display: flex; /* Horizontale weergave */
-    justify-content: center;
+    justify-content: center; /* Centraal uitlijnen */
 }
 
 ul.menu li {
