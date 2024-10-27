@@ -1,21 +1,22 @@
-/* Algemene styling voor de body */
+/* Algemene styling voor het hele document */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Lettertype voor de hele website */
     background-color: #f4f4f4; /* Lichte achtergrondkleur */
     margin: 0;
     padding: 0;
 }
 
-/* Styling voor het menu */
+/* Styling voor de menu-container */
 .menu-container {
     background-color: #333; /* Donkere achtergrondkleur voor het menu */
-    overflow: hidden;
+    overflow: hidden; /* Zorg ervoor dat de container de juiste hoogte heeft */
 }
 
+/* Styling voor het hoofdmenu */
 .menu {
     list-style-type: none; /* Geen opsommingstekens */
-    padding: 0;
-    margin: 0;
+    padding: 0; /* Geen padding */
+    margin: 0; /* Geen margin */
 }
 
 .menu li {
@@ -23,9 +24,9 @@ body {
 }
 
 .menu li a {
-    display: block;
+    display: block; /* Maak de link een blok */
     color: white; /* Witte tekstkleur */
-    text-align: center;
+    text-align: center; /* Centraal uitlijnen */
     padding: 14px 16px; /* Ruimte rondom de tekst */
     text-decoration: none; /* Geen onderstreping */
 }
@@ -55,8 +56,12 @@ body {
     display: none; /* Verberg het submenu van Fysieke Laag standaard */
 }
 
+.submenu li {
+    list-style-type: none; /* Geen opsommingstekens voor submenu-items */
+}
+
 .submenu li a {
-    color: white; /* Witte tekstkleur voor submenu-items */
+    color: #e0e0e0; /* Lichtere kleur voor submenu-tekst */
     padding: 12px 16px; /* Ruimte rondom submenu-items */
 }
 
@@ -64,13 +69,32 @@ body {
     background-color: #575757; /* Donkere kleur bij hover in submenu */
 }
 
-/* Styling voor de content */
+/* Styling voor de inhoud */
 .content {
+    display: flex; /* Flexbox voor het organiseren van inhoud */
+    justify-content: space-between; /* Ruimte tussen elementen */
     padding: 20px; /* Ruimte rondom de inhoud */
     background-color: white; /* Witte achtergrond voor de inhoud */
     margin: 20px; /* Ruimte rondom de inhoud */
     border-radius: 5px; /* Hoekjes afronden */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Schaduw voor een diepte-effect */
+}
+
+/* Styling voor teksten aan de linkerkant */
+.text-left {
+    flex: 1; /* Laat tekstgedeelte de beschikbare ruimte innemen */
+    padding-right: 20px; /* Ruimte tussen tekst en afbeeldingen/videos */
+}
+
+/* Styling voor afbeeldingen/videos aan de rechterkant */
+.image-right {
+    max-width: 40%; /* Max breedte van afbeeldingen/videos */
+    margin-left: 20px; /* Ruimte tussen tekst en afbeelding/video */
+}
+
+/* Styling voor kopjes */
+h1, h2, h3 {
+    color: #007bff; /* Kleur voor alle kopjes */
 }
 
 /* Styling voor de footer */
