@@ -34,7 +34,6 @@ ul.menu li a {
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
-    background-color: transparent; /* Letters blijven zichtbaar */
 }
 
 ul.menu li a:hover {
@@ -61,7 +60,7 @@ ul.menu li a:hover {
 }
 
 .submenu a {
-    color: #87CEFA; /* Lichtblauw */
+    color: #2980b9; /* Lichtblauwe kleur voor submenu-tekst */
     text-decoration: none;
     padding: 8px 12px;
     font-size: 14px;
@@ -70,7 +69,7 @@ ul.menu li a:hover {
 
 .submenu a:hover {
     background-color: rgba(189, 195, 199, 0.8); /* Transparant hover-effect */
-    color: #2980b9; /* Donkerblauw bij hover */
+    color: #2c3e50;
     border-radius: 5px;
 }
 
@@ -95,33 +94,25 @@ ul.menu li a:hover {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
-.text {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.text h1 {
+.content h1 {
     font-size: 32px;
     color: #2980b9;
 }
 
-.text p {
+.content h2 {
+    font-size: 24px;
+    color: #2980b9;
+}
+
+.content p {
     margin-bottom: 15px;
     font-size: 16px;
     line-height: 1.6;
-}
-
-.video iframe {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer stijlen */
