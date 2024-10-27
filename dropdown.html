@@ -3,36 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Dropdown Menu - 3 Lagen Model</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Verwijzing naar het bestaande CSS-bestand -->
 </head>
 <body>
-    <!-- Navigatie Menu -->
-    <ul class="top-level-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="Fysieke-laag.html">Fysieke Laag</a></li>
-        <li><a href="Logische-laag.html">Logische Laag</a></li>
-        <li><a href="Toepassing-laag.html">Toepassing Laag</a></li>
-        <li><a href="nieuw-onderwerp.html">Nieuw Onderwerp</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
 
-    <!-- Dropdown menu -->
-    <nav>
-        <div class="dropdown">
-            <a id="nav-bar-item" href="dropdown.html">Drie Lagen Model</a>
-            <div class="submenu">
-                <div class="dropdown">
-                    <a href="Fysieke-laag.html">Fysieke Laag</a>
-                    <div class="submenu-right">
-                        <a href="processor.html">RAM</a>
-                        <a href="geheugen.html">ROM</a>
-                    </div>
-                </div>
-                <a href="Toepassingenlaag.html">Toepassing Laag</a>
-                <a href="Logische-laag.html">Logische Laag</a>
-            </div>
-        </div>
-    </nav>
+    <!-- Dropdown Menu Container -->
+    <div class="menu-container">
+        <ul class="menu">
+            <!-- Hoofdlink voor de dropdown -->
+            <li class="dropdown">
+                <a href="#">3 Lagen Model</a>
+                <!-- Submenu met de onderwerpen -->
+                <ul class="submenu">
+                    <li>
+                        <a href="Fysieke-laag.html">Fysieke Laag</a>
+                        <ul class="submenu-right">
+                            <li><a href="RAMROM.html">RAM</a></li>
+                            <li><a href="RAMROM.html">ROM</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Toepassingenlaag.html">Toepassing Laag</a></li>
+                    <li><a href="Logische-laag.html">Logische Laag</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
