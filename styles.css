@@ -103,8 +103,8 @@ ul.menu > li > a:hover {
     color: #000000; 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: flex-start; /* Flex-start om de tekst goed uit te lijnen */
+    gap: 25px; /* Breder om tekst en media wat meer ruimte te geven */
     align-items: flex-start;
 }
 
@@ -116,23 +116,25 @@ ul.menu > li > a:hover {
 
 .content p {
     margin: 10px 0; /* Consistente spatiëring voor alinea's */
+    line-height: 1.8; /* Betere regelafstand voor leesbaarheid */
+    text-align: justify; /* Justify uitlijning voor een nette look */
 }
 
 .text {
-    width: 60%;
+    width: 65%; /* Iets breder voor een betere balans met de media-sectie */
+    padding-right: 15px; /* Extra padding voor visuele ruimte */
     text-align: left;
-    line-height: 1.6;
 }
 
 .media {
-    width: 35%;
-    text-align: right;
+    width: 30%; /* Iets compacter voor een betere balans */
+    text-align: center; /* Center uitlijning voor media-elementen */
 }
 
 .media img, .media video {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Iets meer ruimte onder media */
 }
 
 /* Footer stijlen */
