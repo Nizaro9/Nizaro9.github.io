@@ -1,48 +1,48 @@
-/* Algemeen stijlen */
+/* Algemene stijlen */
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Donker zwart */
-    color: #fff; /* Mooie kleur wit */
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Witte achtergrond */
+    color: #000000; /* Zwarte tekst */
 }
 
-/* Header en menu stijlen */
+/* Menu-container en menu stijlen */
 .menu-container {
     background-color: #3c2a91; /* Midnight Purple */
-    padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+    text-align: center;
 }
 
 ul.menu {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Menu centreren */
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-ul.menu li {
+ul.menu > li {
+    position: relative;
     margin: 0 15px;
-    position: relative; /* Voor dropdown-functionaliteit */
 }
 
-ul.menu li a {
+ul.menu > li > a {
+    color: #ffffff; /* Witte tekst */
     text-decoration: none;
-    color: #ffffff; /* Wit voor menu tekst */
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 15px;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s;
     border-radius: 5px;
 }
 
-ul.menu li a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Licht effect bij hover */
-    color: #ffffff; /* Wit bij hover */
+ul.menu > li > a:hover {
+    background-color: #4b2c91; /* Donkerder paars bij hover */
 }
 
-/* Dropdown menu stijlen */
+/* Dropdown menu */
 .dropdown:hover .submenu {
     display: block;
 }
@@ -50,91 +50,87 @@ ul.menu li a:hover {
 .submenu {
     display: none;
     position: absolute;
-    top: 40px; /* Plaats de submenu onder de hoofdmenu */
-    left: 0;
-    background-color: #4b2c91; /* Donkerder paars voor dropdown */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    z-index: 1;
+    top: 100%; /* Plaats submenu onder de hoofdlink */
+    background-color: #4b2c91; /* Donkerder paars */
     padding: 10px;
     border-radius: 5px;
+    min-width: 150px;
+    z-index: 1;
+    text-align: left;
+}
+
+.submenu li {
+    list-style: none;
 }
 
 .submenu a {
-    color: #ffffff; /* Wit voor submenu tekst */
+    color: #ffffff; /* Witte tekst */
     text-decoration: none;
     padding: 8px 12px;
-    font-size: 14px;
     display: block;
+    font-size: 14px;
 }
 
 .submenu a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Licht effect bij hover in submenu */
+    background-color: rgba(255, 255, 255, 0.2); /* Transparant wit bij hover */
 }
 
-/* Submenu voor fysieke laag */
+/* Submenu binnen de submenu */
 .submenu-right {
     display: none;
     position: absolute;
+    left: 150px; /* Plaats submenu rechts van het hoofdsubmenu */
     top: 0;
-    left: 150px; /* Plaats het submenu rechts van de submenu */
-    background-color: #4b2c91; /* Donkerder paars */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #4b2c91;
     padding: 10px;
     border-radius: 5px;
+}
+
+.dropdown:hover .submenu-right,
+.submenu li:hover .submenu-right {
+    display: block;
 }
 
 /* Inhoud stijlen */
 .content {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 20px auto;
     padding: 20px;
-    display: flex;
-    justify-content: space-between; /* Ruimte tussen tekst en afbeeldingen */
-    align-items: flex-start;
-    background-color: #1a1a1a; /* Donker achtergrond voor inhoud */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #000000; /* Zwarte tekstkleur */
+    text-align: left;
+    line-height: 1.6;
 }
 
-.text {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.text h1,
-.text h2 {
+.content h1, .content h2 {
     color: #3c2a91; /* Midnight Purple voor kopjes */
 }
 
-.text p {
-    margin-bottom: 15px;
+.content p {
+    margin: 15px 0;
     font-size: 16px;
-    line-height: 1.6;
 }
 
 /* Footer stijlen */
 .footer {
-    background-color: #3c2a91; /* Midnight Purple voor footer */
-    color: #ffffff; /* Wit voor footer tekst */
+    background-color: #3c2a91; /* Midnight Purple */
+    color: #ffffff; /* Witte tekst */
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 3px solid #ffffff; /* Witte lijn boven de footer */
     font-size: 14px;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
 }
 
 .footer img {
     width: 25px;
     height: 25px;
     margin-left: 10px;
-}
-
-.footer a {
-    color: #ffffff; /* Wit voor footer links */
-}
-
-.footer a:hover {
-    color: #ffffff; /* Wit bij hover in footer */
-    transition: color 0.3s;
 }
