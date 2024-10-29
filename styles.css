@@ -1,152 +1,109 @@
-/* Algemene stijlen */
+/* Algemene instellingen voor body en tekst */
 body {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
     background-color: #ffffff; /* Witte achtergrond */
     color: #000000; /* Zwarte tekst */
+    margin: 0;
+    padding: 0;
 }
 
 /* Menu-container en menu stijlen */
 .menu-container {
-    background-color: #3c2a91; /* Midnight Purple */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 10px 0;
+    background-color: #2c2c2c; /* Donker zwart */
     text-align: center;
+    padding: 10px 0;
 }
 
-ul.menu {
-    list-style-type: none;
-    padding: 0;
+.menu {
+    list-style: none;
     margin: 0;
-    display: inline-flex;
-    align-items: center;
+    padding: 0;
+    display: flex;
     justify-content: center;
+    gap: 20px;
 }
 
-ul.menu > li {
+.menu li {
     position: relative;
-    margin: 0 15px;
 }
 
-ul.menu > li > a {
-    color: #ffffff; /* Witte tekst */
+.menu a {
+    color: #ffffff; /* Witte letters */
     text-decoration: none;
-    padding: 10px 15px;
     font-weight: bold;
+    padding: 10px 15px;
     transition: background-color 0.3s;
-    border-radius: 5px;
 }
 
-ul.menu > li > a:hover {
-    background-color: #4b2c91; /* Donkerder paars bij hover */
+.menu a:hover {
+    background-color: #4b2c91; /* Donker paars bij hover */
 }
 
 /* Dropdown menu */
 .dropdown .submenu {
     display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #4b2c91; /* Donker paars */
+    text-align: left;
+    padding: 5px;
+    border-radius: 4px;
 }
 
 .dropdown:hover .submenu {
     display: block;
 }
 
-.submenu {
-    position: absolute;
-    top: 100%;
-    background-color: #4b2c91;
-    padding: 10px;
-    border-radius: 5px;
-    min-width: 150px;
-    z-index: 1;
-    text-align: left;
-}
-
-.submenu li {
-    list-style: none;
-}
-
 .submenu a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 8px 12px;
     display: block;
-    font-size: 14px;
+    padding: 8px 10px;
+    color: #ffffff;
 }
 
 .submenu a:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Transparant wit bij hover */
+    background-color: #3c2a91; /* Nog donkerder paars bij hover */
 }
 
-/* Submenu binnen de submenu */
-.submenu-right {
-    display: none;
-    position: absolute;
-    left: 150px;
-    top: 0;
-    background-color: #4b2c91;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.dropdown:hover .submenu li:hover .submenu-right {
-    display: block;
-}
-
-/* Inhoud stijlen */
+/* Flexibele lay-out voor content */
 .content {
-    max-width: 900px;
+    display: flex;
+    gap: 30px;
+    max-width: 1000px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #000000; 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 20px;
     align-items: flex-start;
 }
 
-.content h1, .content h2 {
-    color: #3c2a91; /* Midnight Purple voor kopjes */
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-
-.content p {
-    margin: 10px 0; /* Consistente spatiëring voor alinea's */
-}
-
-/* Tekst uitlijning met ruimte aan de linkerkant */
-.text {
+.text-content {
     width: 60%;
-    text-align: left;
-    margin-left: 20px; /* Ruimte aan de linkerkant */
     line-height: 1.6;
+    text-align: left;
 }
 
-.media {
+.text-content h1, .text-content h2 {
+    color: #4b2c91; /* Midnight Purple voor koppen */
+}
+
+.media-content {
     width: 35%;
-    text-align: right;
-    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
 }
 
-.media img, .media video {
+.media-content img, .media-content video {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
-/* Footer stijlen */
+/* Footer */
 .footer {
-    background-color: #3c2a91; 
+    background-color: #2c2c2c; /* Donker zwart */
     color: #ffffff;
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 14px;
+    text-align: center;
 }
 
 .footer a {
