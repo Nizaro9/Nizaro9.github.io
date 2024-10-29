@@ -1,4 +1,4 @@
-/* Algemene stijlen */
+\/* Algemene stijlen */
 body {
     margin: 0;
     padding: 0;
@@ -53,8 +53,8 @@ ul.menu > li > a:hover {
 
 .submenu {
     position: absolute;
-    top: 100%;
-    background-color: #4b2c91;
+    top: 100%; /* Plaats submenu onder de hoofdlink */
+    background-color: #4b2c91; /* Donkerder paars */
     padding: 10px;
     border-radius: 5px;
     min-width: 150px;
@@ -67,7 +67,7 @@ ul.menu > li > a:hover {
 }
 
 .submenu a {
-    color: #ffffff;
+    color: #ffffff; /* Witte tekst */
     text-decoration: none;
     padding: 8px 12px;
     display: block;
@@ -82,7 +82,7 @@ ul.menu > li > a:hover {
 .submenu-right {
     display: none;
     position: absolute;
-    left: 150px;
+    left: 150px; /* Plaats submenu rechts van het hoofdsubmenu */
     top: 0;
     background-color: #4b2c91;
     padding: 10px;
@@ -100,47 +100,39 @@ ul.menu > li > a:hover {
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: #000000; 
+    color: #000000; /* Zwarte tekstkleur */
+    text-align: left;
+    line-height: 1.6;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start; /* Flex-start om de tekst goed uit te lijnen */
-    gap: 25px; /* Breder om tekst en media wat meer ruimte te geven */
-    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .content h1, .content h2 {
     color: #3c2a91; /* Midnight Purple voor kopjes */
-    margin-top: 0;
-    margin-bottom: 10px;
 }
 
-.content p {
-    margin: 10px 0; /* Consistente spatiëring voor alinea's */
-    line-height: 1.8; /* Betere regelafstand voor leesbaarheid */
-    text-align: justify; /* Justify uitlijning voor een nette look */
-}
-
-.text {
-    width: 65%; /* Iets breder voor een betere balans met de media-sectie */
-    padding-right: 15px; /* Extra padding voor visuele ruimte */
+.content .text {
     text-align: left;
+    width: 60%;
 }
 
-.media {
-    width: 30%; /* Iets compacter voor een betere balans */
-    text-align: center; /* Center uitlijning voor media-elementen */
+.content .media {
+    text-align: right;
+    width: 35%;
 }
 
-.media img, .media video {
+.content img, .content video {
     max-width: 100%;
     height: auto;
-    margin-bottom: 15px; /* Iets meer ruimte onder media */
+    display: block;
 }
 
 /* Footer stijlen */
 .footer {
-    background-color: #3c2a91; 
-    color: #ffffff;
+    background-color: #3c2a91; /* Midnight Purple */
+    color: #ffffff; /* Witte tekst */
     padding: 15px;
     display: flex;
     justify-content: space-between;
