@@ -1,4 +1,4 @@
-\/* Algemene stijlen */
+/* Algemene stijlen */
 body {
     margin: 0;
     padding: 0;
@@ -104,29 +104,32 @@ ul.menu > li > a:hover {
     text-align: left;
     line-height: 1.6;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column; /* Gebruik kolomrichting voor de inhoud */
     gap: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Animatie voor fade-in effect */
 }
 
 .content h1, .content h2 {
     color: #3c2a91; /* Midnight Purple voor kopjes */
+    margin-top: 0; /* Verwijder bovenmarge voor kopjes */
 }
 
-.content .text {
-    text-align: left;
-    width: 60%;
+.content p {
+    margin-bottom: 20px;
+    font-size: 16px; /* Aangepaste lettergrootte voor alinea's */
 }
 
 .content .media {
-    text-align: right;
-    width: 35%;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .content img, .content video {
     max-width: 100%;
     height: auto;
     display: block;
+    margin: 0 auto; /* Centraal uitlijnen van afbeeldingen */
 }
 
 /* Footer stijlen */
@@ -150,4 +153,11 @@ ul.menu > li > a:hover {
     width: 25px;
     height: 25px;
     margin-left: 10px;
+}
+
+/* Animatie voor fade-in effect bij de inhoud */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
