@@ -112,13 +112,16 @@ ul.menu > li > a:hover {
 
 .content h1, .content h2, .content h3 {
     color: #3c2a91; /* Midnight Purple voor kopjes */
-    margin-top: 0px;  /* Geen marge aan de bovenkant van de kopjes */
-    margin-bottom: 5px; /* Zeer kleine marge aan de onderkant van de kopjes */
+    margin-top: 0;  /* Geen marge aan de bovenkant van de kopjes */
+    margin-bottom: 3px; /* Zeer kleine marge aan de onderkant van de kopjes */
+    padding: 0; /* Verwijder eventuele padding van kopjes */
 }
 
 .content p {
-    margin-bottom: 20px;
+    margin-top: 0; /* Geen ruimte boven alinea's */
+    margin-bottom: 10px; /* Kleinere ruimte onder de alinea */
     font-size: 16px; /* Aangepaste lettergrootte voor alinea's */
+    padding: 0; /* Verwijder padding van alinea's */
 }
 
 .content .media {
