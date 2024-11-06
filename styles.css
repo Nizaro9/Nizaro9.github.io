@@ -39,7 +39,7 @@ ul.menu > li > a {
 }
 
 ul.menu > li > a:hover {
-    background-color: #4b2c91; /* Donkerder paars bij hover */
+    background-color: #ff7f00; /* Helder oranje bij hover */
 }
 
 /* Dropdown menu */
