@@ -112,8 +112,8 @@ ul.menu > li > a:hover {
 
 .content h1, .content h2, .content h3 {
     color: #3c2a91; /* Midnight Purple voor kopjes */
-    margin-top: 10px;  /* Kleinere marge aan de bovenkant van de kopjes */
-    margin-bottom: 10px; /* Kleinere marge aan de onderkant van de kopjes */
+    margin-top: 0px;  /* Geen marge aan de bovenkant van de kopjes */
+    margin-bottom: 5px; /* Zeer kleine marge aan de onderkant van de kopjes */
 }
 
 .content p {
