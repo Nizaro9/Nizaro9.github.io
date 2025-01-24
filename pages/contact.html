@@ -4,44 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welkom op Nizar's Website</title>
-    <link rel="stylesheet" href="styless2.css"> <!-- Link naar externe CSS -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Link naar CSS -->
 </head>
 <body>
-    <!-- Container voor het menu bovenaan de website -->
+    <!--  bovenaan de website -->
     <div class="menu-container">
         <!-- Het menu zelf -->
         <ul class="menu">
-            <!-- Normale menu-items, die naar map 'pages' verwijzen -->
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Algemeneinformatie.html">Algemene Informatie</a></li>
-            <li><a href="binair-stelsel.html">Binair stelsel</a></li>
-            <li><a href="kleurmodellen.html">Kleurmodellen</a></li>
-            <li><a href="compressie.html">Compressie</a></li>
-            <li><a href="Bestandsformaten.html">Bestandsformaten</a></li>
+            <!-- Normale menu -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/Algemeneinformatie.html">Algemene Informatie</a></li>
+            <li><a href="../pages/binair-stelsel.html">Binair stelsel</a></li>
+            <li><a href="../kleurmodellen.html">Kleurmodellen</a></li>
+            <li><a href="../pages/compressie.html">Compressie</a></li>
+            <li><a href="../pages/Bestandsformaten.html">Bestandsformaten</a></li>
 
-            <!-- Dropdown-menu voor 3 Lagen Model, die naar map 'dropdown' verwijzen -->
+            <!-- Dropdown-menu voor 3 Lagen Model -->
             <li class="dropdown">
-                <a href="dropdown.html">3 Lagen Model</a>
+                <a href="../dropdown/dropdown.html">3 Lagen Model</a>
                 <ul class="submenu">
                     <li class="dropdown">
-                        <a href="fysiekelaag.html">Fysieke Laag</a>
+                        <a href="../dropdown/fysiekelaag.html">Fysieke Laag</a>
                         <ul class="submenu-right">
-                            <li><a href="RAM.html">RAM</a></li>
-                            <li><a href="ROM.html">ROM</a></li>
+                            <li><a href="../dropdown/RAM.html">RAM</a></li>
+                            <li><a href="../dropdown/ROM.html">ROM</a></li>
                         </ul>
                     </li>
-                    <li><a href="Toepassingenlaag.html">Toepassing Laag</a></li>
-                    <li><a href="logischelaag.html">Logische Laag</a></li>
-                    <li><a href="systeemsoftware.html">Systeemsoftware</a></li>
+                    <li><a href="../dropdown/Toepassingenlaag.html">Toepassing Laag</a></li>
+                    <li><a href="../dropdown/logischelaag.html">Logische Laag</a></li>
+                    <li><a href="../dropdown/systeemsoftware.html">Systeemsoftware</a></li>
                 </ul>
             </li>
 
-            <!-- Normale menu-items, die naar map 'pages' verwijzen -->
-            <li><a href="contact.html">Contact</a></li>
+            <!-- Normale menu -->
+            <li><a href="../pages/contact.html">Contact</a></li>
         </ul>
     </div>
 
-    <!-- Hier komt de inhoud van je "Contact" pagina -->
+    <!-- inhoud van "Contact" pagina -->
     <div class="content">
         <div class="contact">
             <h1>Contactgegevens</h1>
@@ -66,7 +66,7 @@
         </form>
         
         <script>
-            // JavaScript-functie om het ingediende formulier weer te geven
+            // JavaScript functie om het ingediende formulier weer te geven
             document.getElementById("contact-form").addEventListener("submit", function(event) {
                 event.preventDefault();
                 var formData = new FormData(event.target);
